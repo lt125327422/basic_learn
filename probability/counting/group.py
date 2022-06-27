@@ -1,4 +1,4 @@
-from counting.util import p, c, f
+from probability.counting.util import p, c, f
 
 # print(p(3, 3))
 
