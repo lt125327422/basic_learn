@@ -1,0 +1,646 @@
+﻿[Script Info]
+ScriptType: v4.00+
+Collisions: Normal
+ScaledBorderAndShadow: Yes
+PlayResX: 1280
+PlayResY: 720
+Timer: 100.0000
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption-27,Arial,21,&H009febfd,&H009febfd,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-28,Arial,21,&H00b9c3da,&H00b9c3da,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-29,Arial,21,&H00ba8b9c,&H00ba8b9c,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-40,Arial,27,&H00420fe2,&H00420fe2,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-41,Arial,27,&H00ffc7b7,&H00ffc7b7,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Song-2,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-42,Arial,27,&H00d3b7fd,&H00d3b7fd,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Song-3,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-43,Arial,27,&H000600fb,&H000600fb,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Default,Roboto Medium,40,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-44,Arial,27,&H00eb779e,&H00eb779e,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-45,Arial,27,&H003f12f3,&H003f12f3,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-46,Arial,21,&H003f12f3,&H003f12f3,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-47,Arial,21,&H00b19ca3,&H00b19ca3,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-10,Arial,27,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-48,Arial,34,&H009e009c,&H009e009c,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-11,Arial,27,&H00d7c4f6,&H00d7c4f6,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-49,Arial,34,&H000cad54,&H000cad54,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-12,Arial,21,&H009ea6b8,&H009ea6b8,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Subtitle-2,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-13,Arial,27,&H00c389ac,&H00c389ac,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Subtitle-3,Roboto Medium,52,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-14,Arial,21,&H00e4d0cd,&H00e4d0cd,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-15,Arial,27,&H00f2c2fa,&H00f2c2fa,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Subtitle-4,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Subtitle-5,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-16,Arial,27,&H00f2f48a,&H00f2f48a,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption,Arial,27,&H00fcfa8d,&H00fcfa8d,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Subtitle,Roboto Medium,52,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-17,Arial,27,&H00f2f48a,&H00f2f48a,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-18,Arial,21,&H00feb3ff,&H00feb3ff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-19,Arial,21,&H00bcb442,&H00bcb442,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-30,Arial,27,&H00b3ffd2,&H00b3ffd2,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-31,Arial,27,&H00f6d2b9,&H00f6d2b9,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-32,Arial,21,&H0086e9f2,&H0086e9f2,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-33,Arial,34,&H006347d5,&H006347d5,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-34,Arial,27,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-35,Arial,27,&H006347d5,&H006347d5,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-36,Arial,27,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-37,Arial,21,&H00c371ea,&H00c371ea,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-38,Arial,27,&H00c371ea,&H00c371ea,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-39,Arial,21,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-50,Arial,34,&H001e05c5,&H001e05c5,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-51,Arial,34,&H00cc9c0b,&H00cc9c0b,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-52,Arial,27,&H00fbc6b2,&H00fbc6b2,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-53,Arial,21,&H0092f3f6,&H0092f3f6,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-54,Arial,27,&H00a35cff,&H00a35cff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-2,Arial,34,&H00fc74c7,&H00fc74c7,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-55,Arial,27,&H00fc01dd,&H00fc01dd,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-3,Arial,21,&H00b3b6d1,&H00b3b6d1,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-4,Arial,27,&H00f1c988,&H00f1c988,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-5,Arial,27,&H00fcf9fd,&H00fcf9fd,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Song,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-20,Arial,27,&H00f7f692,&H00f7f692,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-6,Arial,21,&H00f2def0,&H00f2def0,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-21,Arial,27,&H00fd80a8,&H00fd80a8,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-7,Arial,21,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-22,Arial,21,&H00e6b1af,&H00e6b1af,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-8,Arial,27,&H00f2def0,&H00f2def0,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-23,Arial,34,&H009ea7b9,&H009ea7b9,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-9,Arial,27,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-24,Arial,34,&H00957175,&H00957175,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-25,Arial,40,&H00f39a91,&H00f39a91,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-26,Arial,34,&H00c2a1fa,&H00c2a1fa,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:02.96,0:00:08.46,Caption,,0000,0000,0000,,{\pos(256,57.6)}{\an7}SUPER
+Dialogue: 0,0:00:03.33,0:00:08.46,Caption,,0000,0000,0000,,{\pos(601.6,57.6)}{\an7}SPECIAL
+Dialogue: 0,0:00:03.71,0:00:08.46,Caption,,0000,0000,0000,,{\pos(960,57.6)}{\an7}MOVE
+Dialogue: 0,0:00:04.88,0:00:09.08,Subtitle,,0000,0000,0000,,Continuing from last time, I wanna come up with a\Nspecial attack that's good for a Shadow Mistress like me!
+Dialogue: 0,0:00:08.46,0:00:10.00,Caption-2,,0000,0000,0000,,{\pos(435.2,453.6)}{\an7}MR. SHIROSAWA'S SUPER MOVE
+Dialogue: 0,0:00:10.13,0:00:13.67,Subtitle,,0000,0000,0000,,A super move? I hardly have\Nany combat power compared to humans.
+Dialogue: 0,0:00:13.67,0:00:15.54,Subtitle,,0000,0000,0000,,But I do have a specialty.
+Dialogue: 0,0:00:15.83,0:00:18.92,Subtitle,,0000,0000,0000,,My species is known for being exceptional\Nat fortune telling and prophecies.
+Dialogue: 0,0:00:18.92,0:00:20.42,Subtitle,,0000,0000,0000,,Back in our home country,
+Dialogue: 0,0:00:20.42,0:00:24.25,Subtitle,,0000,0000,0000,,we made our living by staying at the homes\Nof influential people and advising them on the future.
+Dialogue: 0,0:00:24.38,0:00:26.17,Subtitle,,0000,0000,0000,,This path may lead you to a silver mine.
+Dialogue: 0,0:00:24.50,0:00:26.25,Caption-3,,0000,0000,0000,,{\pos(857.6,151.2)}{\an7}This path may lead you
+Dialogue: 0,0:00:24.50,0:00:26.25,Caption-3,,0000,0000,0000,,{\pos(896,201.6)}{\an7}to a silver mine
+Dialogue: 0,0:00:26.17,0:00:26.96,Subtitle,,0000,0000,0000,,Whoa.
+Dialogue: 0,0:00:26.25,0:00:27.21,Caption-3,,0000,0000,0000,,{\pos(332.8,165.6)}{\an7}Whoa
+Dialogue: 0,0:00:27.50,0:00:30.00,Subtitle,,0000,0000,0000,,Look up "Bai Ze" if you want to know more.
+Dialogue: 0,0:00:30.00,0:00:31.79,Subtitle,,0000,0000,0000,,Fortune telling? Oh, do me!
+Dialogue: 0,0:00:32.04,0:00:34.88,Subtitle,,0000,0000,0000,,I'm not as good now as I was in my prime,\Nbut I can demonstrate for you.
+Dialogue: 0,0:00:36.00,0:00:37.96,Subtitle,,0000,0000,0000,,You occasionally find yourself lacking confidence.
+Dialogue: 0,0:00:37.96,0:00:39.50,Subtitle,,0000,0000,0000,,Wow! You're right!
+Dialogue: 0,0:00:40.13,0:00:42.21,Subtitle,,0000,0000,0000,,You are regarded by others\Nas the type who can't say "no."
+Dialogue: 0,0:00:42.21,0:00:43.71,Subtitle,,0000,0000,0000,,Wow! You're right!
+Dialogue: 0,0:00:43.71,0:00:45.88,Subtitle,,0000,0000,0000,,Doesn't take much to impress you, huh, Shamiko?
+Dialogue: 0,0:00:45.88,0:00:47.38,Caption-4,,0000,0000,0000,,{\pos(499.2,57.6)}{\an7}LICO'S SUPER MOVE
+Dialogue: 0,0:00:47.50,0:00:50.38,Subtitle,,0000,0000,0000,,I don't have any of those fancy-schmancy attacks,
+Dialogue: 0,0:00:50.38,0:00:53.08,Subtitle,,0000,0000,0000,,but I do keep a little something up my sleeve\Nfor dealing with priestesses.
+Dialogue: 0,0:00:53.08,0:00:55.00,Subtitle,,0000,0000,0000,,Really? I wanna see it!
+Dialogue: 0,0:00:55.21,0:00:58.21,Subtitle,,0000,0000,0000,,Um, well, I don't want to show you with Momo around.
+Dialogue: 0,0:00:58.21,0:01:01.25,Subtitle,,0000,0000,0000,,I mean, there may be a time down the road\Nwhen it comes in handy...
+Dialogue: 0,0:01:01.42,0:01:03.50,Subtitle,,0000,0000,0000,,Exactly what kind of scenario\Nare you imagining that it would?
+Dialogue: 0,0:01:03.63,0:01:06.83,Subtitle,,0000,0000,0000,,Okay! I've got a real simple one\Nthat I can show you here and now.
+Dialogue: 0,0:01:07.00,0:01:09.00,Subtitle,,0000,0000,0000,,Momo, hun? Could you drink this for me?
+Dialogue: 0,0:01:09.00,0:01:11.04,Subtitle,,0000,0000,0000,,I'm not drinking any liquid that's such a crazy color!
+Dialogue: 0,0:01:11.04,0:01:12.21,Subtitle,,0000,0000,0000,,Yeah, that figures.
+Dialogue: 0,0:01:12.21,0:01:15.50,Subtitle,,0000,0000,0000,,Momo, hun? Could you go clean up the glasses\Nthat are left on the counter?
+Dialogue: 0,0:01:15.79,0:01:19.33,Subtitle,,0000,0000,0000,,Not until you explain why there's something\Nthat looks like a pitfall trap over there.
+Dialogue: 0,0:01:31.13,0:01:34.67,Song,,0000,0000,0000,,Doki doki wa kore kara!
+Dialogue: 0,0:01:38.71,0:01:42.58,Song,,0000,0000,0000,,Kiseki okoru yokan
+Dialogue: 0,0:01:42.58,0:01:48.21,Song,,0000,0000,0000,,Henachoko sajikagen de ii desho iza susume!
+Dialogue: 0,0:01:48.21,0:01:49.88,Song-2,,0000,0000,0000,,Ichika bachika yukeru donna basho datte\N{\rSong}Henachoko sajikagen de ii desho iza susume!{\r}
+Dialogue: 0,0:01:49.88,0:01:52.83,Song-3,,0000,0000,0000,,Ichika bachika yukeru donna basho datte
+Dialogue: 0,0:01:53.33,0:01:57.54,Song,,0000,0000,0000,,Motto kikasete core no oto made
+Dialogue: 0,0:01:57.54,0:02:02.33,Song,,0000,0000,0000,,Futari te o awasetara kowaku nai yo
+Dialogue: 0,0:02:02.96,0:02:04.71,Song,,0000,0000,0000,,Komatta toki ni wa
+Dialogue: 0,0:02:05.33,0:02:07.08,Song,,0000,0000,0000,,Omoidashite
+Dialogue: 0,0:02:07.08,0:02:10.83,Song,,0000,0000,0000,,Kimi ga iru tte koto
+Dialogue: 0,0:02:13.92,0:02:18.46,Song,,0000,0000,0000,,Onaji sora futari de miagete
+Dialogue: 0,0:02:18.75,0:02:22.83,Song,,0000,0000,0000,,Waraiatte tsurai koto mo norikoechaou
+Dialogue: 0,0:02:23.67,0:02:28.13,Song,,0000,0000,0000,,Dareka no tame ni ganbaru koto
+Dialogue: 0,0:02:28.33,0:02:30.67,Song,,0000,0000,0000,,Sore mo warukunai
+Dialogue: 0,0:02:31.38,0:02:35.29,Song,,0000,0000,0000,,Kyou mo tonari de
+Dialogue: 0,0:02:38.46,0:02:42.38,Song,,0000,0000,0000,,Tokimeki wa kore kara!
+Dialogue: 0,0:02:50.08,0:02:54.96,Caption-5,,0000,0000,0000,,{\pos(460.8,57.6)}{\an7}PITCH-BLACK FEELINGS!!
+Dialogue: 0,0:02:50.08,0:02:54.96,Caption-5,,0000,0000,0000,,{\pos(435.2,280.8)}{\an7}DARKNESS PEACH RETURNS!!
+Dialogue: 0,0:02:54.96,0:02:56.92,Caption-6,,0000,0000,0000,,{\pos(652.8,338.4)}{\an7}Morning Run
+Dialogue: 0,0:02:54.96,0:02:56.92,Caption-7,,0000,0000,0000,,{\pos(384,388.8)}{\an7}Snooze
+Dialogue: 0,0:02:54.96,0:02:56.92,Caption-7,,0000,0000,0000,,{\pos(448,439.2)}{\an7}Sleep
+Dialogue: 0,0:02:58.54,0:02:59.96,Caption-8,,0000,0000,0000,,{\pos(716.8,309.6)}{\an7}Morning Run
+Dialogue: 0,0:02:58.54,0:02:59.96,Caption-9,,0000,0000,0000,,{\pos(230.4,410.4)}{\an7}Snooze
+Dialogue: 0,0:02:58.54,0:02:59.96,Caption-9,,0000,0000,0000,,{\pos(294.4,460.8)}{\an7}Sleep
+Dialogue: 0,0:03:01.75,0:03:06.38,Subtitle,,0000,0000,0000,,This morning, Momo Chiyoda\Nwas feeling somewhat strange when she woke up.
+Dialogue: 0,0:03:10.67,0:03:14.17,Subtitle,,0000,0000,0000,,Good morning. What's up with your voice today, Metako?
+Dialogue: 0,0:03:14.00,0:03:14.58,Caption-10,,0000,0000,0000,,{\pos(192,129.6)}{\an7}Crack!!
+Dialogue: 0,0:03:14.83,0:03:16.58,Subtitle,,0000,0000,0000,,Huh? My glass just broke...
+Dialogue: 0,0:03:47.75,0:03:48.50,Subtitle,,0000,0000,0000,,What the-?
+Dialogue: 0,0:03:49.21,0:03:51.17,Subtitle,,0000,0000,0000,,A form that should still be fresh in your memories.
+Dialogue: 0,0:03:51.17,0:03:55.88,Subtitle,,0000,0000,0000,,Yes, you know it and love it!\NThe dark side form of Magical Girl, Momo Chiyoda!
+Dialogue: 0,0:03:56.67,0:03:58.58,Subtitle,,0000,0000,0000,,M-Momo, is everything okay?!
+Dialogue: 0,0:03:58.58,0:04:01.71,Subtitle,,0000,0000,0000,,There was a big noise and flashy lights\Nthat reached all the way to my room!
+Dialogue: 0,0:04:02.13,0:04:03.13,Subtitle,,0000,0000,0000,,Shamiko...
+Dialogue: 0,0:04:03.79,0:04:05.96,Subtitle,,0000,0000,0000,,Somehow I ended up going to the dark side again.
+Dialogue: 0,0:04:05.96,0:04:06.38,Subtitle,,0000,0000,0000,,Huh?
+Dialogue: 0,0:04:06.63,0:04:07.63,Subtitle,,0000,0000,0000,,But why...?
+Dialogue: 0,0:04:07.96,0:04:08.92,Subtitle,,0000,0000,0000,,How?!
+Dialogue: 0,0:04:08.92,0:04:09.92,Subtitle,,0000,0000,0000,,I don't know.
+Dialogue: 0,0:04:09.92,0:04:11.83,Subtitle,,0000,0000,0000,,Also, I can't revert to my normal form.
+Dialogue: 0,0:04:11.83,0:04:14.29,Subtitle,,0000,0000,0000,,Wha-? Wha-?! WHAAAAAAAAA?!
+Dialogue: 0,0:04:14.29,0:04:15.54,Subtitle,,0000,0000,0000,,This is nuts!
+Dialogue: 0,0:04:15.54,0:04:17.50,Caption-11,,0000,0000,0000,,{\pos(256,79.2)}{\an7}TUMMY
+Dialogue: 0,0:04:15.54,0:04:17.50,Caption-11,,0000,0000,0000,,{\pos(435.2,129.6)}{\an7}TUMMY
+Dialogue: 0,0:04:15.54,0:04:17.50,Caption-11,,0000,0000,0000,,{\pos(115.2,208.8)}{\an7}TUMMY
+Dialogue: 0,0:04:15.54,0:04:19.29,Caption-11,,0000,0000,0000,,{\pos(934.4,165.6)}{\an7}TUMMY
+Dialogue: 0,0:04:15.55,0:04:19.25,Subtitle-2,,0000,0000,0000,,Tummy... tummy... tummy...
+Dialogue: 0,0:04:15.55,0:04:17.79,Subtitle,,0000,0000,0000,,So, hey, can I go ahead and rub your tummy?
+Dialogue: 0,0:04:15.55,0:04:19.29,Caption-11,,0000,0000,0000,,{\pos(1049.6,388.8)}{\an7}TUMMY
+Dialogue: 0,0:04:17.79,0:04:19.25,Subtitle,,0000,0000,0000,,You're gonna have to save that for later!
+Dialogue: 0,0:04:19.29,0:04:23.75,Caption-12,,0000,0000,0000,,{\pos(947.2,403.2)}{\an7}BANDA TERRACE
+Dialogue: 0,0:04:20.75,0:04:23.75,Subtitle,,0000,0000,0000,,Oh dear. You don't seem very chipper today, boy.
+Dialogue: 0,0:04:23.75,0:04:25.54,Subtitle,,0000,0000,0000,,Are you okay, physically?
+Dialogue: 0,0:04:26.00,0:04:28.17,Subtitle,,0000,0000,0000,,Well, it doesn't hurt or make me feel tired.
+Dialogue: 0,0:04:28.17,0:04:31.50,Subtitle,,0000,0000,0000,,But I'm unable to regulate the amount\Nof magic power being used to move my body.
+Dialogue: 0,0:04:32.17,0:04:34.88,Subtitle,,0000,0000,0000,,See? I can't hold my strength back at all.
+Dialogue: 0,0:04:34.88,0:04:37.13,Subtitle,,0000,0000,0000,,It's like my magic is constantly\Ndischarging at max capacity.
+Dialogue: 0,0:04:37.25,0:04:39.29,Subtitle,,0000,0000,0000,,That seems like something\Neven the regular Momo could do!
+Dialogue: 0,0:04:37.38,0:04:39.46,Caption-13,,0000,0000,0000,,{\pos(204.8,136.8)}{\an7}That seems
+Dialogue: 0,0:04:37.38,0:04:39.46,Caption-13,,0000,0000,0000,,{\pos(192,187.2)}{\an7}like something
+Dialogue: 0,0:04:37.38,0:04:39.46,Caption-13,,0000,0000,0000,,{\pos(179.2,237.6)}{\an7}even the regular
+Dialogue: 0,0:04:37.38,0:04:39.46,Caption-13,,0000,0000,0000,,{\pos(179.2,288)}{\an7}Momo could do!
+Dialogue: 0,0:04:39.54,0:04:43.08,Subtitle,,0000,0000,0000,,At this rate, my magic will run out quickly\Nand I'll end up nothing but a core.
+Dialogue: 0,0:04:44.25,0:04:46.92,Subtitle,,0000,0000,0000,,So, I need to revert back to normal ASAP.
+Dialogue: 0,0:04:46.92,0:04:49.21,Subtitle,,0000,0000,0000,,It's so sad that we have to say goodbye to you, Momo!
+Dialogue: 0,0:04:49.33,0:04:52.13,Subtitle,,0000,0000,0000,,You better make a bucketload\Nof doll vessels before you go!
+Dialogue: 0,0:04:52.13,0:04:54.75,Subtitle,,0000,0000,0000,,I could grind your statue\Ninto dust right now if I wanted to.
+Dialogue: 0,0:04:55.08,0:04:57.79,Subtitle,,0000,0000,0000,,Right! I'll just be quiet over here.
+Dialogue: 0,0:04:58.71,0:05:00.00,Caption-14,,0000,0000,0000,,{\pos(1100.8,252)}{\an7}YOSHIDA
+Dialogue: 0,0:05:00.13,0:05:01.21,Subtitle,,0000,0000,0000,,Let's get going.
+Dialogue: 0,0:05:01.21,0:05:03.25,Subtitle,,0000,0000,0000,,I may revert back like last time\Nif we have Mikan shoot me again.
+Dialogue: 0,0:05:03.25,0:05:06.50,Subtitle,,0000,0000,0000,,I'll be honest, I wish I didn't have\Nto see you go through that over and over.
+Dialogue: 0,0:05:06.83,0:05:08.21,Subtitle,,0000,0000,0000,,Does it bother you or something?
+Dialogue: 0,0:05:08.21,0:05:09.79,Subtitle,,0000,0000,0000,,Huh? Well, yeah...
+Dialogue: 0,0:05:13.17,0:05:17.46,Subtitle,,0000,0000,0000,,I understand that you all used some extreme measures\Nwhen Lady Momo gave herself to the darkness.
+Dialogue: 0,0:05:17.63,0:05:21.21,Subtitle,,0000,0000,0000,,Swallowing strange elixirs\Nand forcibly changing her class.
+Dialogue: 0,0:05:21.21,0:05:23.92,Subtitle,,0000,0000,0000,,That's likely what caused her core\Nto become so unstable.
+Dialogue: 0,0:05:24.42,0:05:28.50,Subtitle,,0000,0000,0000,,It made me realize the way you went\Nto the dark side last time was just too reckless.
+Dialogue: 0,0:05:28.50,0:05:32.46,Subtitle,,0000,0000,0000,,But I had to do something back then, because not\Ntaking action would have made me feel like garbage.
+Dialogue: 0,0:05:32.75,0:05:35.29,Subtitle,,0000,0000,0000,,I have no regrets about my decision.
+Dialogue: 0,0:05:35.29,0:05:37.08,Subtitle,,0000,0000,0000,,So please don't let it bother you.
+Dialogue: 0,0:05:37.50,0:05:38.67,Subtitle,,0000,0000,0000,,If you say so.
+Dialogue: 0,0:05:39.29,0:05:41.58,Subtitle,,0000,0000,0000,,Let's stay calm and focus on doing what we can.
+Dialogue: 0,0:05:41.58,0:05:43.08,Subtitle,,0000,0000,0000,,R-right.
+Dialogue: 0,0:05:44.67,0:05:47.33,Subtitle,,0000,0000,0000,,On another note, what is up with that string?
+Dialogue: 0,0:05:47.92,0:05:49.00,Caption-15,,0000,0000,0000,,{\pos(102.4,439.2)}{\an7}Creep...
+Dialogue: 0,0:05:48.08,0:05:49.88,Subtitle,,0000,0000,0000,,Honestly, I just wanna pull it!
+Dialogue: 0,0:05:50.79,0:05:54.00,Caption-16,,0000,0000,0000,,{\pos(307.2,424.8)}{\an7}WHAT HAPPENS IF YOU PULL MOMO'S STRING?
+Dialogue: 0,0:05:51.04,0:05:54.00,Subtitle,,0000,0000,0000,,Pop quiz. What happens if you pull Momo's string?
+Dialogue: 0,0:05:54.00,0:06:06.17,Caption-17,,0000,0000,0000,,{\pos(102.4,122.4)}{\an7}WHAT HAPPENS IF YOU PULL MOMO'S STRING?
+Dialogue: 0,0:05:54.25,0:05:56.50,Subtitle,,0000,0000,0000,,Number 1: Her skirt falls down.
+Dialogue: 0,0:05:54.58,0:06:06.17,Caption-18,,0000,0000,0000,,{\pos(153.6,151.2)}{\an7}Her skirt falls down.
+Dialogue: 0,0:05:56.50,0:05:58.38,Subtitle,,0000,0000,0000,,Number 2: Her panties fall down.
+Dialogue: 0,0:05:56.67,0:06:06.17,Caption-18,,0000,0000,0000,,{\pos(153.6,208.8)}{\an7}Her panties fall down.
+Dialogue: 0,0:05:58.38,0:06:00.33,Subtitle,,0000,0000,0000,,Number 3: Both her skirt and panties fall down.
+Dialogue: 0,0:05:58.50,0:06:06.17,Caption-18,,0000,0000,0000,,{\pos(153.6,259.2)}{\an7}Both her skirt and panties fall down.
+Dialogue: 0,0:06:00.33,0:06:03.00,Subtitle,,0000,0000,0000,,Number 4: Sadly, it's only a decorative thing.
+Dialogue: 0,0:06:00.54,0:06:06.17,Caption-19,,0000,0000,0000,,{\pos(153.6,316.8)}{\an7}Sadly, it's only
+Dialogue: 0,0:06:00.54,0:06:06.17,Caption-19,,0000,0000,0000,,{\pos(153.6,374.4)}{\an7}a decorative thing.
+Dialogue: 0,0:06:00.54,0:06:06.17,Caption-19,,0000,0000,0000,,{\pos(153.6,439.2)}{\an7}Nothing falls down.
+Dialogue: 0,0:06:03.00,0:06:04.29,Subtitle,,0000,0000,0000,,Nothing falls down.
+Dialogue: 0,0:06:04.42,0:06:06.92,Subtitle,,0000,0000,0000,,Twitch, twitch, twitch, twitch, twitch
+Dialogue: 0,0:06:07.04,0:06:08.25,Subtitle,,0000,0000,0000,,Pardon me a moment!
+Dialogue: 0,0:06:08.25,0:06:08.79,Subtitle,,0000,0000,0000,,Shamiko?!
+Dialogue: 0,0:06:09.38,0:06:10.83,Subtitle,,0000,0000,0000,,I don't know what your deal is, but calm down.
+Dialogue: 0,0:06:10.83,0:06:12.42,Subtitle,,0000,0000,0000,,I'm sorry!
+Dialogue: 0,0:06:12.54,0:06:15.83,Subtitle,,0000,0000,0000,,Ding, ding, ding! The correct answer was this!\NDid you get it right?
+Dialogue: 0,0:06:12.54,0:06:16.00,Caption-20,,0000,0000,0000,,{\pos(409.6,208.8)}{\an7}WHAT HAPPENS IF PULL MOMO'S STRING?
+Dialogue: 0,0:06:12.54,0:06:16.00,Caption-21,,0000,0000,0000,,{\pos(448,424.8)}{\an7}SHAMIKO GETS PUT INTO A HOLD
+Dialogue: 0,0:06:16.46,0:06:18.25,Subtitle,,0000,0000,0000,,Anyways, let's do our best.
+Dialogue: 0,0:06:18.92,0:06:21.67,Subtitle,,0000,0000,0000,,I know this is important, but you can't\Njust break down people's doors!
+Dialogue: 0,0:06:21.67,0:06:23.88,Subtitle,,0000,0000,0000,,Well, it's impossible to adjust\Nhow much strength I'm using!
+Dialogue: 0,0:06:23.79,0:06:27.79,Caption-22,,0000,0000,0000,,{\pos(998.4,115.2)}{\an7}Shudderrrr
+Dialogue: 0,0:06:24.08,0:06:27.79,Subtitle,,0000,0000,0000,,What? So you might have totally obliterated me\Nwith that move a minute ago...?
+Dialogue: 0,0:06:28.13,0:06:29.29,Subtitle,,0000,0000,0000,,Wake up, Mikan!
+Dialogue: 0,0:06:30.25,0:06:32.33,Subtitle,,0000,0000,0000,,Huh? Wuzzat? Why do you look like that?
+Dialogue: 0,0:06:32.33,0:06:34.58,Subtitle,,0000,0000,0000,,I need you to strike my core\Nas hard as possible without killing me!
+Dialogue: 0,0:06:34.58,0:06:35.29,Subtitle,,0000,0000,0000,,What?!
+Dialogue: 0,0:06:35.29,0:06:41.13,Subtitle-2,,0000,0000,0000,,Oh gosh, I'm sorry! I'm so sorry about this!
+Dialogue: 0,0:06:35.29,0:06:38.83,Subtitle,,0000,0000,0000,,We don't have time! Hurry and transform!\NThen go outside! Move it, move it!
+Dialogue: 0,0:06:38.83,0:06:43.08,Subtitle,,0000,0000,0000,,C'mon! Hurry it up! Chop chop! There's no time to waste!
+Dialogue: 0,0:06:41.46,0:06:43.08,Subtitle-3,,0000,0000,0000,,What the heck is going on?!
+Dialogue: 0,0:07:04.46,0:07:07.17,Caption-23,,0000,0000,0000,,{\pos(473.6,374.4)}{\an7}BANDA TERRACE
+Dialogue: 0,0:07:04.54,0:07:07.79,Subtitle,,0000,0000,0000,,What is the big deal?\NThis is SO not how I wanted to wake up!
+Dialogue: 0,0:07:07.17,0:07:08.42,Caption-24,,0000,0000,0000,,{\pos(473.6,374.4)}{\an7}BANDA TERRACE
+Dialogue: 0,0:07:08.42,0:07:09.63,Subtitle,,0000,0000,0000,,Did it work?
+Dialogue: 0,0:07:09.79,0:07:11.29,Subtitle,,0000,0000,0000,,Nope. I'm not reverting back.
+Dialogue: 0,0:07:11.42,0:07:14.83,Subtitle,,0000,0000,0000,,Well, it wasn't me because I put my heart\Ninto that shot and gave it everything that I had.
+Dialogue: 0,0:07:15.38,0:07:18.13,Subtitle,,0000,0000,0000,,But you're so mean! How dare you wake me up like this!
+Dialogue: 0,0:07:18.13,0:07:19.42,Subtitle,,0000,0000,0000,,Making me shoot an arrow at you!
+Dialogue: 0,0:07:19.42,0:07:20.88,Subtitle,,0000,0000,0000,,Put yourself in my shoes, darn it!
+Dialogue: 0,0:07:21.00,0:07:22.67,Subtitle,,0000,0000,0000,,It's the worst way to start the day!
+Dialogue: 0,0:07:22.67,0:07:25.17,Subtitle,,0000,0000,0000,,My bad. I'm sorry... seriously.
+Dialogue: 0,0:07:25.50,0:07:27.38,Subtitle,,0000,0000,0000,,Okay then, you're welcome!
+Dialogue: 0,0:07:28.88,0:07:32.88,Subtitle,,0000,0000,0000,,It would be nice if you guys\Ncould put yourself in my shoes, too.
+Dialogue: 0,0:07:32.88,0:07:35.17,Subtitle,,0000,0000,0000,,Seeing as how I always get swept up in Mikan's curse...
+Dialogue: 0,0:07:35.17,0:07:37.50,Subtitle,,0000,0000,0000,,How'd you get all the way up there, Ancestor?
+Dialogue: 0,0:07:39.00,0:07:41.63,Subtitle,,0000,0000,0000,,Hey Shamiko, can you get in touch with Café Asura?
+Dialogue: 0,0:07:41.63,0:07:42.29,Subtitle,,0000,0000,0000,,Sure.
+Dialogue: 0,0:07:42.29,0:07:44.67,Subtitle,,0000,0000,0000,,Good gracious. That sounds like a real pickle!
+Dialogue: 0,0:07:44.67,0:07:48.96,Subtitle,,0000,0000,0000,,Unfortunately, my medicine requires a teeny-weeny bit\Nof time to take full effect after you have a dose.
+Dialogue: 0,0:07:49.38,0:07:52.04,Subtitle,,0000,0000,0000,,There's not much hope of it working\Nif things are already wonky.
+Dialogue: 0,0:07:52.42,0:07:56.38,Subtitle,,0000,0000,0000,,Not to mention that keeping your qi in balance is really\Nonly useful to help prevent bad things from happening.
+Dialogue: 0,0:07:56.71,0:07:58.25,Subtitle,,0000,0000,0000,,Is that so...?
+Dialogue: 0,0:07:58.25,0:07:59.67,Subtitle,,0000,0000,0000,,You sound down in the dumps.
+Dialogue: 0,0:07:59.79,0:08:04.08,Subtitle,,0000,0000,0000,,D-don't worry! It would've been too late\Neven if you had taken my medicine the other day!
+Dialogue: 0,0:08:04.08,0:08:06.13,Subtitle,,0000,0000,0000,,It's not your fault for refusing it!
+Dialogue: 0,0:08:06.13,0:08:08.46,Subtitle,,0000,0000,0000,,You're good, so just pass into the afterlife\Nwithout any regrets!
+Dialogue: 0,0:08:08.63,0:08:11.08,Subtitle,,0000,0000,0000,,Lico! Your attempt to reassure her\Nis only having the opposite effect!
+Dialogue: 0,0:08:11.08,0:08:13.29,Subtitle,,0000,0000,0000,,Why don't you try asking Sion Ogura?
+Dialogue: 0,0:08:13.29,0:08:15.42,Subtitle,,0000,0000,0000,,She may be able to offer a good solution.
+Dialogue: 0,0:08:15.96,0:08:18.29,Subtitle,,0000,0000,0000,,I have her number on my phone in my room.
+Dialogue: 0,0:08:18.63,0:08:21.38,Caption-25,,0000,0000,0000,,{\pos(640,100.8)}{\an7}BUSTED!!!
+Dialogue: 0,0:08:18.67,0:08:20.25,Subtitle-2,,0000,0000,0000,,Busteeeeeeed...
+Dialogue: 0,0:08:19.17,0:08:20.25,Subtitle,,0000,0000,0000,,It's broken!
+Dialogue: 0,0:08:20.25,0:08:21.38,Subtitle,,0000,0000,0000,,The screen is totally shattered!
+Dialogue: 0,0:08:21.50,0:08:24.38,Subtitle,,0000,0000,0000,,Oh crap... that must have happened\Nwhen the alarm woke me up.
+Dialogue: 0,0:08:24.38,0:08:25.96,Subtitle,,0000,0000,0000,,Now how do we contact her?
+Dialogue: 0,0:08:26.83,0:08:28.58,Subtitle-2,,0000,0000,0000,,Faaaade...
+Dialogue: 0,0:08:26.83,0:08:30.25,Subtitle,,0000,0000,0000,,M-Momo?! Is it just me or are you\Nbecoming see-through somehow?!
+Dialogue: 0,0:08:30.25,0:08:32.04,Subtitle,,0000,0000,0000,,This is bad. I'm almost out of magic!
+Dialogue: 0,0:08:32.04,0:08:34.46,Subtitle,,0000,0000,0000,,Then we have to hurry and get a hold of Ogura!
+Dialogue: 0,0:08:34.46,0:08:36.42,Subtitle,,0000,0000,0000,,Oh no... What to do? What to do?!
+Dialogue: 0,0:08:36.42,0:08:37.21,Subtitle,,0000,0000,0000,,Looking for me?
+Dialogue: 0,0:08:37.46,0:08:38.79,Subtitle,,0000,0000,0000,,Oh! It's Ogura!
+Dialogue: 0,0:08:38.79,0:08:41.08,Subtitle,,0000,0000,0000,,I got the sense I was in big demand, so here I am!
+Dialogue: 0,0:08:41.42,0:08:42.63,Subtitle,,0000,0000,0000,,But how did you know...?
+Dialogue: 0,0:08:42.88,0:08:45.50,Subtitle,,0000,0000,0000,,Because I was listening on a tiny mic\Nthat I installed in your demon god statue.
+Dialogue: 0,0:08:44.08,0:08:45.50,Subtitle-3,,0000,0000,0000,,I had no idea she put that inside of me...
+Dialogue: 0,0:08:44.25,0:08:45.63,Caption-26,,0000,0000,0000,,{\pos(332.8,57.6)}{\an7}I had no idea she put that inside of me...
+Dialogue: 0,0:08:45.83,0:08:49.71,Subtitle,,0000,0000,0000,,Also, I've been patrolling through your neighborhood\Nfor 5 days a week just by coincidence.
+Dialogue: 0,0:08:51.17,0:08:53.00,Subtitle,,0000,0000,0000,,Well, whatever! Thank you very much!
+Dialogue: 0,0:08:53.33,0:08:57.25,Subtitle,,0000,0000,0000,,Oh, Shamiko. Despite the small misgivings you just had,\Nyour gratefulness won out in the end, huh?
+Dialogue: 0,0:08:57.25,0:08:58.58,Subtitle,,0000,0000,0000,,Thank you so much!
+Dialogue: 0,0:08:58.58,0:09:02.38,Subtitle,,0000,0000,0000,,My interested was so piqued after everything that\Nhappened last time that I've been researching non-stop
+Dialogue: 0,0:09:02.38,0:09:04.33,Subtitle,,0000,0000,0000,,and waiting for an opportunity to help out!
+Dialogue: 0,0:09:04.33,0:09:06.29,Subtitle,,0000,0000,0000,,That's nice, but stalking is a crim-! Mmph!
+Dialogue: 0,0:09:06.29,0:09:08.21,Subtitle,,0000,0000,0000,,Do you know why I suddenly fell to the darkness?
+Dialogue: 0,0:09:08.46,0:09:10.46,Subtitle,,0000,0000,0000,,This is just conjecture on my part,
+Dialogue: 0,0:09:10.46,0:09:13.50,Subtitle,,0000,0000,0000,,but I think it was negative feelings you were having\Nthat triggered the change.
+Dialogue: 0,0:09:13.63,0:09:14.92,Subtitle,,0000,0000,0000,,Negative feelings?
+Dialogue: 0,0:09:14.92,0:09:19.25,Subtitle,,0000,0000,0000,,Jealousy, paranoia, greed.\NAny of the adverse type like that.
+Dialogue: 0,0:09:20.38,0:09:24.83,Subtitle,,0000,0000,0000,,I've found many records throughout history\Nthat describe people related to the Light Clan
+Dialogue: 0,0:09:24.83,0:09:27.79,Subtitle,,0000,0000,0000,,who fell to the darkness all by themselves\Nafter being overwhelmed with negative feelings.
+Dialogue: 0,0:09:28.08,0:09:30.88,Subtitle,,0000,0000,0000,,Normally, it's not something that can happen so easily.
+Dialogue: 0,0:09:31.13,0:09:33.33,Subtitle,,0000,0000,0000,,However, your core has been in an delicate position
+Dialogue: 0,0:09:31.13,0:09:34.58,Caption-7,,0000,0000,0000,,{\pos(179.2,64.8)}{\an7}Negative Gusts
+Dialogue: 0,0:09:31.13,0:09:34.58,Caption-27,,0000,0000,0000,,{\pos(691.2,115.2)}{\an7}Light
+Dialogue: 0,0:09:31.13,0:09:34.58,Caption-28,,0000,0000,0000,,{\pos(550.4,237.6)}{\an7}Core
+Dialogue: 0,0:09:31.13,0:09:34.58,Caption-29,,0000,0000,0000,,{\pos(448,511.2)}{\an7}Darkness
+Dialogue: 0,0:09:33.33,0:09:34.67,Subtitle,,0000,0000,0000,,since that last incident,
+Dialogue: 0,0:09:34.58,0:09:42.58,Caption-7,,0000,0000,0000,,{\pos(192,64.8)}{\an7}Negative Gusts
+Dialogue: 0,0:09:34.58,0:09:42.58,Caption-27,,0000,0000,0000,,{\pos(652.8,115.2)}{\an7}Light
+Dialogue: 0,0:09:34.59,0:09:42.58,Caption-28,,0000,0000,0000,,{\pos(537.6,230.4)}{\an7}Core
+Dialogue: 0,0:09:34.59,0:09:42.58,Caption-29,,0000,0000,0000,,{\pos(486.4,511.2)}{\an7}Darkness
+Dialogue: 0,0:09:34.75,0:09:36.00,Subtitle,,0000,0000,0000,,which made you very susceptible
+Dialogue: 0,0:09:36.00,0:09:37.25,Subtitle,,0000,0000,0000,,to plummeting to the dark side!
+Dialogue: 0,0:09:37.54,0:09:39.33,Subtitle,,0000,0000,0000,,That's a pretty elaborate diagram.
+Dialogue: 0,0:09:39.33,0:09:41.29,Subtitle,,0000,0000,0000,,I get the feeling she saw this coming a mile away
+Dialogue: 0,0:09:41.29,0:09:42.58,Subtitle,,0000,0000,0000,,and prepared for it ahead of time.
+Dialogue: 0,0:09:43.04,0:09:44.33,Subtitle,,0000,0000,0000,,So, how can I change back?
+Dialogue: 0,0:09:44.33,0:09:50.42,Subtitle,,0000,0000,0000,,As it stands, your core has slipped and switched over to\Nthe dark class, which broke your link with the Light Clan.
+Dialogue: 0,0:09:50.67,0:09:52.38,Subtitle,,0000,0000,0000,,All you need to do is make yourself happy again
+Dialogue: 0,0:09:52.38,0:09:55.38,Subtitle,,0000,0000,0000,,by dealing with whatever negative feelings\Nyou've been having lately.
+Dialogue: 0,0:09:55.38,0:09:59.79,Subtitle,,0000,0000,0000,,That will reestablish your link with the Light Clan\Nand make it so you can return to normal! Maybe!
+Dialogue: 0,0:09:59.79,0:10:00.50,Subtitle,,0000,0000,0000,,In other words...?
+Dialogue: 0,0:10:01.25,0:10:05.67,Subtitle,,0000,0000,0000,,You gotta come totally clean and vent about\Nall the stuff that's been getting on your nerves lately!
+Dialogue: 0,0:10:05.83,0:10:08.08,Subtitle,,0000,0000,0000,,All right, then I'm cool with just fading away like this.
+Dialogue: 0,0:10:08.08,0:10:09.54,Subtitle,,0000,0000,0000,,No way! Don't you dare give up!
+Dialogue: 0,0:10:09.54,0:10:12.83,Subtitle,,0000,0000,0000,,Momo! Please tell me what's been\Nmaking you so unhappy lately!
+Dialogue: 0,0:10:13.00,0:10:16.00,Subtitle,,0000,0000,0000,,I have an idea of what caused it,\Nbut I don't want to talk about it here!
+Dialogue: 0,0:10:16.00,0:10:18.33,Subtitle,,0000,0000,0000,,Come on! What happened to all that\N"let's do our best" stuff?!
+Dialogue: 0,0:10:17.58,0:10:19.33,Subtitle-3,,0000,0000,0000,,You realize I'm gonna be a sobbing mess\Nif you disappear on us!
+Dialogue: 0,0:10:18.88,0:10:21.13,Subtitle,,0000,0000,0000,,Nobody goes through life without\Npublicly embarrassing themselves once or twice!
+Dialogue: 0,0:10:23.13,0:10:24.25,Subtitle,,0000,0000,0000,,Well, yesterday...
+Dialogue: 0,0:10:25.17,0:10:28.38,Subtitle,,0000,0000,0000,,...after everything that happened, I wasn't able to relax\Nand enjoy the lunch Shamiko made.
+Dialogue: 0,0:10:28.54,0:10:30.21,Subtitle,,0000,0000,0000,,Even though I did all my homework.
+Dialogue: 0,0:10:30.21,0:10:31.67,Subtitle,,0000,0000,0000,,I had been really looking forward to it.\N{\rSubtitle-4}Momoaaaan....{\r}
+Dialogue: 0,0:10:32.79,0:10:34.83,Subtitle,,0000,0000,0000,,THAT'S what drove you to the dark side?
+Dialogue: 0,0:10:35.00,0:10:37.75,Subtitle,,0000,0000,0000,,The truth is I'm a very small-minded\Nand boring individual.
+Dialogue: 0,0:10:37.75,0:10:39.25,Subtitle,,0000,0000,0000,,Gotta admit, that's kind of adorable.
+Dialogue: 0,0:10:39.25,0:10:40.50,Subtitle,,0000,0000,0000,,Psheeeeew...
+Dialogue: 0,0:10:40.50,0:10:42.79,Subtitle,,0000,0000,0000,,I just wanna drop off the face of the Earth right now.
+Dialogue: 0,0:10:42.79,0:10:46.63,Subtitle,,0000,0000,0000,,Well, Momo is on the verge of a breakdown in more ways\Nthan one, so let's hurry and feed her a lunch.
+Dialogue: 0,0:10:46.63,0:10:47.63,Subtitle,,0000,0000,0000,,R-right!
+Dialogue: 0,0:10:47.71,0:10:49.63,Subtitle,,0000,0000,0000,,What to make? What to make?
+Dialogue: 0,0:10:47.79,0:10:48.54,Caption-30,,0000,0000,0000,,{\pos(230.4,280.8)}{\an7}What to make?
+Dialogue: 0,0:10:48.88,0:10:49.50,Caption-30,,0000,0000,0000,,{\pos(857.6,280.8)}{\an7}What to make?
+Dialogue: 0,0:10:49.88,0:10:55.96,Subtitle-2,,0000,0000,0000,,What to make? What to make?
+Dialogue: 0,0:10:49.88,0:10:52.58,Subtitle,,0000,0000,0000,,But you know, it takes a lot of time to make a lunch.
+Dialogue: 0,0:10:52.58,0:10:55.04,Subtitle,,0000,0000,0000,,Momo's magic might run dry while I'm still cooking!
+Dialogue: 0,0:10:55.04,0:10:55.96,Subtitle,,0000,0000,0000,,Hold up, Shamiko.
+Dialogue: 0,0:10:55.96,0:10:58.33,Subtitle,,0000,0000,0000,,You have one already! Just look in the fridge.
+Dialogue: 0,0:11:00.96,0:11:03.29,Subtitle,,0000,0000,0000,,What do you think? How does it look?
+Dialogue: 0,0:11:03.83,0:11:07.29,Subtitle,,0000,0000,0000,,Yeah, that's the one! The first lunch\Nthat you worked really hard to make!
+Dialogue: 0,0:11:07.29,0:11:08.83,Subtitle,,0000,0000,0000,,The dead leaf colored lunch!
+Dialogue: 0,0:11:08.83,0:11:10.58,Subtitle,,0000,0000,0000,,No. I don't wanna serve her this!
+Dialogue: 0,0:11:10.58,0:11:14.58,Subtitle,,0000,0000,0000,,There isn't time for anything else! Besides,\Nthis is a lunch you made all on your own. Be proud of it!
+Dialogue: 0,0:11:14.92,0:11:16.50,Subtitle,,0000,0000,0000,,Dead leaf colored...
+Dialogue: 0,0:11:17.17,0:11:19.54,Subtitle,,0000,0000,0000,,I think it's a nice lunch that seems just like you.
+Dialogue: 0,0:11:19.54,0:11:21.88,Subtitle,,0000,0000,0000,,What the heck does that mean?! Just shut up and eat it!
+Dialogue: 0,0:11:22.88,0:11:24.50,Subtitle,,0000,0000,0000,,One problem. I can't hold my chopsticks.
+Dialogue: 0,0:11:24.50,0:11:26.63,Subtitle,,0000,0000,0000,,Aw, jeez! Then open your mouth!
+Dialogue: 0,0:11:26.88,0:11:28.33,Subtitle,,0000,0000,0000,,Ahhh....
+Dialogue: 0,0:11:28.63,0:11:29.71,Subtitle,,0000,0000,0000,,Omelette!
+Dialogue: 0,0:11:30.42,0:11:34.42,Subtitle-2,,0000,0000,0000,,Huff! Puff! Huff! Puff! Huff! Puff! Huff! Puff!
+Dialogue: 0,0:11:31.71,0:11:34.42,Subtitle,,0000,0000,0000,,Is it good? Do you like it? Are you satisfied?
+Dialogue: 0,0:11:38.33,0:11:39.29,Subtitle,,0000,0000,0000,,I'm back!
+Dialogue: 0,0:11:39.29,0:11:40.50,Subtitle,,0000,0000,0000,,You did it!
+Dialogue: 0,0:11:40.71,0:11:42.13,Subtitle,,0000,0000,0000,,Thanks, everybody.
+Dialogue: 0,0:11:42.33,0:11:43.67,Subtitle,,0000,0000,0000,,I'm sorry for all the trouble.
+Dialogue: 0,0:11:44.42,0:11:48.08,Subtitle,,0000,0000,0000,,You'll need to be quick to regulate\Nany chaotic emotions that you have from now on.
+Dialogue: 0,0:11:48.08,0:11:48.46,Subtitle,,0000,0000,0000,,Huh?
+Dialogue: 0,0:11:48.75,0:11:52.00,Subtitle,,0000,0000,0000,,Well, you're going to remain susceptible\Nto slipping over to the dark side for some time.
+Dialogue: 0,0:11:52.21,0:11:55.88,Subtitle,,0000,0000,0000,,And if it happens again,\NI hope you'll let me come take more data!
+Dialogue: 0,0:11:55.88,0:11:56.42,Subtitle,,0000,0000,0000,,What?!
+Dialogue: 0,0:11:56.42,0:11:57.88,Subtitle,,0000,0000,0000,,So this is gonna keep happening?!
+Dialogue: 0,0:11:59.33,0:12:04.71,Subtitle,,0000,0000,0000,,Don't give up, Momo! Learn to diffuse the mental bomb\Nyou carry by staying tough and aware in life.
+Dialogue: 0,0:12:15.67,0:12:17.21,Subtitle,,0000,0000,0000,,Momp-momp...
+Dialogue: 0,0:12:17.92,0:12:19.46,Subtitle,,0000,0000,0000,,Momo looks down for the count.
+Dialogue: 0,0:12:19.46,0:12:20.67,Subtitle,,0000,0000,0000,,Are you all right?
+Dialogue: 0,0:12:20.88,0:12:22.46,Subtitle,,0000,0000,0000,,My core is exhausted.
+Dialogue: 0,0:12:22.58,0:12:26.04,Subtitle,,0000,0000,0000,,I used up so much of my magic after\NI unintentionally went back to the dark side.
+Dialogue: 0,0:12:26.29,0:12:28.88,Subtitle,,0000,0000,0000,,But... it'll recover with time. I just need to take it easy.
+Dialogue: 0,0:12:28.88,0:12:30.04,Subtitle,,0000,0000,0000,,There's a fix for that!
+Dialogue: 0,0:12:30.21,0:12:34.96,Subtitle,,0000,0000,0000,,I know a place that will get Chiyoda\Nback on her feet! Lickity-split!
+Dialogue: 0,0:12:32.25,0:12:35.00,Caption-31,,0000,0000,0000,,{\pos(422.4,172.8)}{\an7}SLINK...
+Dialogue: 0,0:12:35.71,0:12:36.75,Subtitle,,0000,0000,0000,,O-Ogura?!
+Dialogue: 0,0:12:36.75,0:12:39.13,Subtitle,,0000,0000,0000,,And the name of that place is none other than:\NSakura Chiyoda's Secret Spring!
+Dialogue: 0,0:12:39.13,0:12:41.71,Subtitle,,0000,0000,0000,,Great, but I'd like to know\Nwhy you came out of the ceiling first!
+Dialogue: 0,0:12:41.71,0:12:45.54,Subtitle,,0000,0000,0000,,I mean, if you want to know why I'm in the attic,\Nthen it's because there's an attic for me to be in!
+Dialogue: 0,0:12:45.54,0:12:46.50,Subtitle,,0000,0000,0000,,How philosophic.
+Dialogue: 0,0:12:46.75,0:12:48.42,Subtitle,,0000,0000,0000,,My sister has a secret spring?
+Dialogue: 0,0:12:49.17,0:12:51.38,Subtitle,,0000,0000,0000,,I'd love to explain, but...
+Dialogue: 0,0:12:51.96,0:12:52.88,Subtitle,,0000,0000,0000,,Shloop.
+Dialogue: 0,0:12:53.13,0:12:54.38,Subtitle,,0000,0000,0000,,Slink.
+Dialogue: 0,0:12:54.54,0:12:58.92,Subtitle,,0000,0000,0000,,I'm afraid that I can't get down because it's higher\Nthan I thought, so could you help me with that first?
+Dialogue: 0,0:12:59.21,0:13:00.71,Subtitle,,0000,0000,0000,,You didn't rehearse this?
+Dialogue: 0,0:13:00.71,0:13:02.33,Subtitle,,0000,0000,0000,,I was too excited, so I didn't.
+Dialogue: 0,0:13:07.83,0:13:09.71,Subtitle,,0000,0000,0000,,I'll make sure there's a ladder next time.
+Dialogue: 0,0:13:09.92,0:13:12.46,Subtitle,,0000,0000,0000,,You're really planning to pop out from up above again?
+Dialogue: 0,0:13:13.08,0:13:14.04,Subtitle,,0000,0000,0000,,Thanks for waiting!
+Dialogue: 0,0:13:14.04,0:13:18.58,Subtitle,,0000,0000,0000,,Sakura Chiyoda's Secret Spring is a special place\Nwhere magical girls can rejuvenate themselves!
+Dialogue: 0,0:13:21.67,0:13:23.96,Subtitle,,0000,0000,0000,,Very deep inside the mountainous region of Tama,
+Dialogue: 0,0:13:23.96,0:13:27.17,Subtitle,,0000,0000,0000,,there is a mystical spring of water\Nthat contains super-duper strong magic!
+Dialogue: 0,0:13:27.17,0:13:32.46,Subtitle,,0000,0000,0000,,Apparently, it started as pure water that gushed out and\Nformed a puddle in the depths of an uninhabited cave.
+Dialogue: 0,0:13:33.58,0:13:37.08,Subtitle,,0000,0000,0000,,But then a hole coincidentally opened up\Nin the ceiling of that cave and...
+Dialogue: 0,0:13:37.25,0:13:39.29,Subtitle,,0000,0000,0000,,MOONLIGHT SHINED DOWN LIKE FLASH!
+Dialogue: 0,0:13:39.29,0:13:41.38,Subtitle,,0000,0000,0000,,MAGIC WENT IN THE WATER LIKE ZAAAP!
+Dialogue: 0,0:13:41.92,0:13:44.04,Subtitle,,0000,0000,0000,,NEGATIVE IONS FLEW IN LIKE KAWOOOOSH!
+Dialogue: 0,0:13:44.13,0:13:47.08,Subtitle,,0000,0000,0000,,AND A NATURAL SPRING\NOF MYTHICAL WATER WAS BOOOORN!
+Dialogue: 0,0:13:47.21,0:13:49.50,Subtitle,,0000,0000,0000,,A miracle created through pure happenstance!
+Dialogue: 0,0:13:49.75,0:13:51.58,Subtitle,,0000,0000,0000,,A TRUE WONDER OF NATURE!
+Dialogue: 0,0:13:50.29,0:13:51.58,Subtitle-2,,0000,0000,0000,,Whoa there, you're all over the place.
+Dialogue: 0,0:13:52.04,0:13:55.33,Subtitle,,0000,0000,0000,,All an injured magical girl has to do\Nis submerge themselves in that water
+Dialogue: 0,0:13:55.33,0:13:58.04,Subtitle,,0000,0000,0000,,and their ether body will be healed!
+Dialogue: 0,0:13:58.04,0:14:00.83,Subtitle,,0000,0000,0000,,How did you find out about such a wonderful place?
+Dialogue: 0,0:14:00.96,0:14:04.00,Subtitle,,0000,0000,0000,,I read about it in the notes\Nthat Chiyoda's big sister wrote!
+Dialogue: 0,0:14:04.00,0:14:04.79,Subtitle,,0000,0000,0000,,Huh?
+Dialogue: 0,0:14:04.79,0:14:08.67,Subtitle,,0000,0000,0000,,Oh, right. I left all the documents and notes\Nthat belonged to my sister with Ogura.
+Dialogue: 0,0:14:08.96,0:14:11.29,Subtitle,,0000,0000,0000,,I couldn't figure out what any of them said.
+Dialogue: 0,0:14:11.42,0:14:13.29,Subtitle,,0000,0000,0000,,I'm working hard to decipher them all!
+Dialogue: 0,0:14:13.29,0:14:17.29,Subtitle,,0000,0000,0000,,A healing spring sounds like something\Nstraight out of a video game! I wanna go see it!
+Dialogue: 0,0:14:18.21,0:14:22.29,Subtitle,,0000,0000,0000,,You've got some pretty dark stains on you, so you should\Ntake a long soak. That will make them easy to get out!
+Dialogue: 0,0:14:22.46,0:14:24.83,Subtitle,,0000,0000,0000,,Quit making me sound like dirty laundry\Nthat needs to be washed.
+Dialogue: 0,0:14:24.96,0:14:27.08,Subtitle,,0000,0000,0000,,I put the location data in a map app for you.
+Dialogue: 0,0:14:27.25,0:14:29.83,Subtitle,,0000,0000,0000,,And while you're there, get some samples\Nof that water to bring back for me!
+Dialogue: 0,0:14:29.83,0:14:32.75,Subtitle,,0000,0000,0000,,Mythical water is a fundamental ingredient in alchemy!
+Dialogue: 0,0:14:32.75,0:14:34.46,Subtitle,,0000,0000,0000,,You're not going to come with us?
+Dialogue: 0,0:14:34.58,0:14:37.29,Subtitle,,0000,0000,0000,,I'm an indoors person.\NSo hiking a mountain in summer would kill me.
+Dialogue: 0,0:14:37.29,0:14:39.79,Subtitle,,0000,0000,0000,,I think it's probably more bearable\Nthan being in a stuffy attic.
+Dialogue: 0,0:14:39.79,0:14:41.38,Subtitle,,0000,0000,0000,,Thank you. We'll go check it out.
+Dialogue: 0,0:14:41.92,0:14:42.54,Subtitle,,0000,0000,0000,,A mountain?
+Dialogue: 0,0:14:42.92,0:14:45.38,Subtitle,,0000,0000,0000,,Sorry, I think I'm gonna have to pass on this one.
+Dialogue: 0,0:14:45.38,0:14:46.29,Subtitle,,0000,0000,0000,,Why?!
+Dialogue: 0,0:14:46.29,0:14:48.50,Subtitle,,0000,0000,0000,,I have to go to an interview\Nas part of my school transfer request.
+Dialogue: 0,0:14:48.50,0:14:53.00,Caption-32,,0000,0000,0000,,{\pos(128,129.6)}{\an7}TRANSFER APPROVED             STILL A STUDENT
+Dialogue: 0,0:14:49.17,0:14:53.96,Subtitle,,0000,0000,0000,,And if I skip out on it, then I can't change schools!\NWhich means I'll lose my status as a student!
+Dialogue: 0,0:14:53.00,0:14:54.25,Caption-32,,0000,0000,0000,,{\pos(128,129.6)}{\an7}TRANSFER DENIED                      STUDENT
+Dialogue: 0,0:15:15.46,0:15:21.42,Caption-7,,0000,0000,0000,,{\pos(512,151.2)}{\an7}DEEP INNER TAMA STATION
+Dialogue: 0,0:15:15.58,0:15:17.00,Subtitle,,0000,0000,0000,,Deep Inner Tama Station.
+Dialogue: 0,0:15:17.00,0:15:18.54,Subtitle,,0000,0000,0000,,Hey, I've been here before.
+Dialogue: 0,0:15:18.54,0:15:19.29,Subtitle,,0000,0000,0000,,Oh really?
+Dialogue: 0,0:15:19.46,0:15:21.33,Subtitle,,0000,0000,0000,,Yeah, because I missed my stop.
+Dialogue: 0,0:15:23.63,0:15:26.79,Subtitle,,0000,0000,0000,,So I guess the place we're going to\Nis private property that my sister owns.
+Dialogue: 0,0:15:26.79,0:15:29.92,Subtitle,,0000,0000,0000,,It's out in the middle of nowhere, but it looks like\Nwe can reach it by following the mountain trails.
+Dialogue: 0,0:15:32.42,0:15:33.79,Subtitle,,0000,0000,0000,,There's a sign up ahead!
+Dialogue: 0,0:15:34.08,0:15:42.17,Caption-33,,0000,0000,0000,,{\pos(550.4,72)}{\an7}WARNING
+Dialogue: 0,0:15:34.08,0:15:42.17,Caption-34,,0000,0000,0000,,{\pos(435.2,252)}{\an7}This area is private property.
+Dialogue: 0,0:15:34.09,0:15:36.04,Subtitle,,0000,0000,0000,,"This area is private property."
+Dialogue: 0,0:15:34.09,0:15:42.17,Caption-34,,0000,0000,0000,,{\pos(320,352.8)}{\an7}Because valuable resources can be found here,
+Dialogue: 0,0:15:34.09,0:15:42.17,Caption-35,,0000,0000,0000,,{\pos(307.2,424.8)}{\an7}many traps have been laid to help prevent theft
+Dialogue: 0,0:15:34.09,0:15:42.17,Caption-34,,0000,0000,0000,,{\pos(435.2,504)}{\an7}and also just because it's fun.
+Dialogue: 0,0:15:36.04,0:15:38.13,Subtitle,,0000,0000,0000,,"Because valuable resources can be found here,
+Dialogue: 0,0:15:38.13,0:15:41.67,Subtitle,,0000,0000,0000,,many traps have been laid to help prevent theft\Nand also just because it's fun."
+Dialogue: 0,0:15:42.38,0:15:52.08,Caption-36,,0000,0000,0000,,{\pos(563.2,72)}{\an7}...However
+Dialogue: 0,0:15:42.38,0:15:52.08,Caption-36,,0000,0000,0000,,{\pos(473.6,172.8)}{\an7}If you insist on entering,
+Dialogue: 0,0:15:42.38,0:15:52.08,Caption-36,,0000,0000,0000,,{\pos(217.6,252)}{\an7}then I hope you enjoy the difficulty of reaching the treasure!!
+Dialogue: 0,0:15:42.38,0:15:52.08,Caption-36,,0000,0000,0000,,{\pos(243.2,331.2)}{\an7}I know the only people who would bother coming out here
+Dialogue: 0,0:15:42.38,0:15:52.08,Caption-36,,0000,0000,0000,,{\pos(396.8,410.4)}{\an7}are my friends and family anyways!
+Dialogue: 0,0:15:42.38,0:15:52.08,Caption-36,,0000,0000,0000,,{\pos(755.2,511.2)}{\an7}-Chiyoda, the landlord
+Dialogue: 0,0:15:42.42,0:15:46.50,Subtitle,,0000,0000,0000,,...however, if you insist on entering then I hope\Nyou enjoy the difficulty of reaching the treasure!
+Dialogue: 0,0:15:46.88,0:15:50.29,Subtitle,,0000,0000,0000,,I know the only people who would bother coming out\Nhere are my friends and family anyways.
+Dialogue: 0,0:15:50.54,0:15:52.00,Subtitle,,0000,0000,0000,,Chiyoda, the landlord.
+Dialogue: 0,0:15:52.13,0:15:53.79,Subtitle,,0000,0000,0000,,What is she trying to say with this?
+Dialogue: 0,0:15:54.00,0:15:55.46,Subtitle,,0000,0000,0000,,I'm not sure I get it either...
+Dialogue: 0,0:15:55.58,0:15:57.38,Subtitle,,0000,0000,0000,,What kind of traps prevent thieves?
+Dialogue: 0,0:15:57.38,0:15:59.50,Subtitle,,0000,0000,0000,,She probably used magic booby traps and familiars.
+Dialogue: 0,0:15:59.50,0:16:00.92,Subtitle,,0000,0000,0000,,F-familiars?!
+Dialogue: 0,0:16:00.92,0:16:05.92,Caption-35,,0000,0000,0000,,{\pos(345.6,223.2)}{\an7}Many traps have been laid to help prevent
+Dialogue: 0,0:16:00.92,0:16:05.92,Caption-34,,0000,0000,0000,,{\pos(396.8,331.2)}{\an7}theft and also just because it's fun.
+Dialogue: 0,0:16:11.29,0:16:15.38,Subtitle,,0000,0000,0000,,Considering my sister's personality, it's nothing deadly\Nand just stuff that'll comedically beat us up.
+Dialogue: 0,0:16:15.38,0:16:17.96,Subtitle,,0000,0000,0000,,But I need you to fight since I'm too weak right now.
+Dialogue: 0,0:16:17.96,0:16:21.75,Subtitle,,0000,0000,0000,,So what, you want me to walk into non-lethal traps\Nand get comedically beaten up?!
+Dialogue: 0,0:16:21.75,0:16:22.38,Subtitle,,0000,0000,0000,,Yep, let's mov-
+Dialogue: 0,0:16:23.08,0:16:24.50,Subtitle,,0000,0000,0000,,MOMOOOO!
+Dialogue: 0,0:16:24.83,0:16:26.96,Subtitle-2,,0000,0000,0000,,La-dee-da, here I go!
+Dialogue: 0,0:16:24.83,0:16:27.96,Subtitle,,0000,0000,0000,,This trap is safe even if somebody\Ntotally ordinary stumbled upon it.
+Dialogue: 0,0:16:26.96,0:16:29.00,Subtitle-2,,0000,0000,0000,,Aaah! A pitfall!
+Dialogue: 0,0:16:27.96,0:16:29.00,Subtitle,,0000,0000,0000,,It's a pitfall expertly designed
+Dialogue: 0,0:16:28.75,0:16:31.96,Caption-37,,0000,0000,0000,,{\pos(691.2,72)}{\an7}SAFETY LADDER
+Dialogue: 0,0:16:28.75,0:16:31.96,Caption-38,,0000,0000,0000,,{\pos(960,122.4)}{\an7}TOTALLY OKAY
+Dialogue: 0,0:16:28.75,0:16:31.96,Caption-38,,0000,0000,0000,,{\pos(985.6,208.8)}{\an7}TO FALL IN!
+Dialogue: 0,0:16:28.75,0:16:31.96,Caption-37,,0000,0000,0000,,{\pos(832,374.4)}{\an7}SHOCK-ABSORBING CUSHIONS
+Dialogue: 0,0:16:28.75,0:16:31.96,Caption-37,,0000,0000,0000,,{\pos(128,453.6)}{\an7}EMERGENCY BUTTON
+Dialogue: 0,0:16:28.75,0:16:31.96,Caption-39,,0000,0000,0000,,{\pos(742.4,511.2)}{\an7}Presented by: The Safe Pitfall Committee
+Dialogue: 0,0:16:29.00,0:16:30.71,Subtitle,,0000,0000,0000,,to meet with all compliance measures.
+Dialogue: 0,0:16:30.75,0:16:31.96,Subtitle,,0000,0000,0000,,Oh, that wasn't so bad.
+Dialogue: 0,0:16:30.75,0:16:31.96,Caption-40,,0000,0000,0000,,{\pos(153.6,165.6)}{\an7}FULLY            TESTED
+Dialogue: 0,0:16:32.13,0:16:33.96,Subtitle,,0000,0000,0000,,It was a just simple pitfall!
+Dialogue: 0,0:16:34.21,0:16:35.58,Subtitle,,0000,0000,0000,,Where's the magic in that?!
+Dialogue: 0,0:16:37.25,0:16:40.50,Subtitle,,0000,0000,0000,,Let's keep moving. This is a challenge from my sister.
+Dialogue: 0,0:16:40.50,0:16:42.54,Subtitle,,0000,0000,0000,,I totally want to get my hands on that treasure!
+Dialogue: 0,0:16:42.54,0:16:44.50,Subtitle,,0000,0000,0000,,You seem oddly motivated about this...
+Dialogue: 0,0:16:44.50,0:16:46.38,Subtitle,,0000,0000,0000,,Well, I'm a little ticked off.
+Dialogue: 0,0:16:51.58,0:16:53.04,Subtitle,,0000,0000,0000,,Shamiko. You walk in front.
+Dialogue: 0,0:16:53.04,0:16:54.33,Subtitle,,0000,0000,0000,,That's cheating, darn it!
+Dialogue: 0,0:16:54.33,0:16:57.63,Subtitle,,0000,0000,0000,,No, I'm giving us an equal opportunity to hit a pitfall.\NConsider it part of your training.
+Dialogue: 0,0:16:57.63,0:16:58.83,Subtitle,,0000,0000,0000,,New experiences are- hnrg!
+Dialogue: 0,0:16:58.83,0:17:00.08,Subtitle,,0000,0000,0000,,MOMO!
+Dialogue: 0,0:17:00.08,0:17:01.21,Subtitle,,0000,0000,0000,,Momo...!
+Dialogue: 0,0:17:01.21,0:17:02.33,Subtitle-5,,0000,0000,0000,,Momo...!
+Dialogue: 0,0:17:02.75,0:17:04.96,Subtitle,,0000,0000,0000,,It was cute hearing you go "hnrg."
+Dialogue: 0,0:17:04.96,0:17:07.00,Subtitle,,0000,0000,0000,,She set traps that can trigger from behind, too?!
+Dialogue: 0,0:17:07.00,0:17:08.38,Subtitle,,0000,0000,0000,,Momooooope...
+Dialogue: 0,0:17:08.71,0:17:09.96,Subtitle,,0000,0000,0000,,Welp. Time to go home.
+Dialogue: 0,0:17:09.96,0:17:11.54,Subtitle,,0000,0000,0000,,As if! Don't you dare give up!
+Dialogue: 0,0:17:11.54,0:17:13.29,Subtitle,,0000,0000,0000,,I'm about to slip over to the dark side again.
+Dialogue: 0,0:17:15.50,0:17:19.58,Subtitle,,0000,0000,0000,,Intruder. Intruder. Intruder.
+Dialogue: 0,0:17:19.58,0:17:21.42,Subtitle,,0000,0000,0000,,In-in-in-intruder.
+Dialogue: 0,0:17:21.42,0:17:25.46,Subtitle,,0000,0000,0000,,Go back. Go back. Go ba-ba-ba-ba-back.
+Dialogue: 0,0:17:25.63,0:17:27.25,Subtitle,,0000,0000,0000,,Oh, now that's more like it!
+Dialogue: 0,0:17:27.33,0:17:28.13,Subtitle-2,,0000,0000,0000,,Clench.
+Dialogue: 0,0:17:27.33,0:17:27.83,Caption-41,,0000,0000,0000,,{\pos(627.2,460.8)}{\an7}Clench
+Dialogue: 0,0:17:27.34,0:17:28.50,Subtitle,,0000,0000,0000,,What the heck is that?
+Dialogue: 0,0:17:28.50,0:17:29.92,Subtitle,,0000,0000,0000,,A wad of black licorice out for revenge?
+Dialogue: 0,0:17:29.92,0:17:31.38,Subtitle,,0000,0000,0000,,It's a familiar that can operate on its own.
+Dialogue: 0,0:17:31.67,0:17:37.92,Subtitle-2,,0000,0000,0000,,Gachunk! Gachunk! Gachunk! Gachunk!
+Dialogue: 0,0:17:33.21,0:17:35.08,Subtitle,,0000,0000,0000,,Prepare for combat, Shadow Mistress!
+Dialogue: 0,0:17:35.08,0:17:37.92,Subtitle,,0000,0000,0000,,Wah! I wasn't ready for this\Nto suddenly turn into a hardcore battle!
+Dialogue: 0,0:17:38.33,0:17:40.13,Subtitle,,0000,0000,0000,,CRISIS MANAGEMENT FOOOORM!
+Dialogue: 0,0:18:01.04,0:18:18.79,Subtitle-2,,0000,0000,0000,,Stomp, stomp, stomp, stomp, stomp.
+Dialogue: 0,0:18:03.92,0:18:05.88,Subtitle,,0000,0000,0000,,It's been set at a pretty weak level.
+Dialogue: 0,0:18:05.88,0:18:08.33,Subtitle,,0000,0000,0000,,Calm down! It's moving slower than you think!
+Dialogue: 0,0:18:08.88,0:18:10.75,Subtitle,,0000,0000,0000,,Watching how your opponent moves is fighting 101!
+Dialogue: 0,0:18:11.04,0:18:13.63,Subtitle,,0000,0000,0000,,Familiars have something similar to a core,\Nso aim for that!
+Dialogue: 0,0:18:13.63,0:18:15.38,Subtitle,,0000,0000,0000,,I dunno what that looks like!
+Dialogue: 0,0:18:15.38,0:18:17.29,Subtitle,,0000,0000,0000,,Please give me a hint!
+Dialogue: 0,0:18:17.88,0:18:19.00,Subtitle,,0000,0000,0000,,A hint, huh?
+Dialogue: 0,0:18:19.00,0:18:21.46,Subtitle,,0000,0000,0000,,You'd think the pink stone on its chest\Nwould be obvious enough...
+Dialogue: 0,0:18:21.75,0:18:23.79,Subtitle,,0000,0000,0000,,Just try thinking about it by yourself for a minute!
+Dialogue: 0,0:18:23.79,0:18:25.67,Subtitle,,0000,0000,0000,,You're such a mean instructor!
+Dialogue: 0,0:18:25.67,0:18:28.21,Subtitle,,0000,0000,0000,,Upsy-daisy, upsy-daisy, upsy-daisy.
+Dialogue: 0,0:18:30.25,0:18:34.13,Subtitle-2,,0000,0000,0000,,Fidget, fidget... Fidget, fidget...
+Dialogue: 0,0:18:31.33,0:18:34.13,Subtitle,,0000,0000,0000,,Hey! This thing can't climb up to high places!
+Dialogue: 0,0:18:34.13,0:18:36.25,Subtitle,,0000,0000,0000,,So how about we just wait here until it gives up?
+Dialogue: 0,0:18:36.25,0:18:39.38,Subtitle,,0000,0000,0000,,We can't navigate the mountain trail at night,\Nso you gotta hurry this up.
+Dialogue: 0,0:18:40.00,0:18:42.67,Subtitle,,0000,0000,0000,,Um... er... it's weak point...
+Dialogue: 0,0:18:42.67,0:18:46.58,Subtitle,,0000,0000,0000,,I can't find it! Oh, but I guess it doesn't matter\Nwhere it is if I just attack all over the place.
+Dialogue: 0,0:18:46.75,0:18:48.79,Subtitle,,0000,0000,0000,,Okay, Whatchamacallit Rod!
+Dialogue: 0,0:18:48.79,0:18:51.21,Subtitle,,0000,0000,0000,,Copy Mode: Mikan's Weapon!
+Dialogue: 0,0:18:53.79,0:18:54.38,Subtitle,,0000,0000,0000,,Whoa!
+Dialogue: 0,0:18:59.83,0:19:01.54,Subtitle,,0000,0000,0000,,I... I won!
+Dialogue: 0,0:19:01.75,0:19:04.79,Subtitle,,0000,0000,0000,,I never figured out its weak point, but I still won!
+Dialogue: 0,0:19:05.21,0:19:06.88,Subtitle,,0000,0000,0000,,W-well, I guess that worked out...
+Dialogue: 0,0:19:08.08,0:19:11.63,Subtitle,,0000,0000,0000,,It looks like a cheap knock-off, but it copied\Nthe abilities of the original pretty well.
+Dialogue: 0,0:19:11.79,0:19:12.96,Subtitle,,0000,0000,0000,,It has such a weird construction.
+Dialogue: 0,0:19:12.29,0:19:13.75,Subtitle-2,,0000,0000,0000,,Heh-heh!
+Dialogue: 0,0:19:12.96,0:19:13.75,Subtitle,,0000,0000,0000,,It's so convenient!
+Dialogue: 0,0:19:13.25,0:19:15.67,Caption-42,,0000,0000,0000,,{\pos(281.6,108)}{\an7}IT'S SO CONVENIENT!
+Dialogue: 0,0:19:14.08,0:19:15.54,Subtitle,,0000,0000,0000,,Yeah, that's for sure.
+Dialogue: 0,0:19:15.54,0:19:18.42,Subtitle,,0000,0000,0000,,It's my first demonic victory! Yahoo! Yahoo!
+Dialogue: 0,0:19:18.42,0:19:22.13,Caption-43,,0000,0000,0000,,{\pos(102.4,194.4)}{\an7}THIS WAS THE WEAK POINT!
+Dialogue: 0,0:19:19.04,0:19:21.79,Subtitle,,0000,0000,0000,,By the way, the pink stone\Non its chest was the weak point.
+Dialogue: 0,0:19:22.46,0:19:23.71,Subtitle,,0000,0000,0000,,That makes sense!
+Dialogue: 0,0:19:23.88,0:19:26.04,Subtitle,,0000,0000,0000,,Hey, can I take this stone home with me?
+Dialogue: 0,0:19:26.04,0:19:28.79,Subtitle,,0000,0000,0000,,I don't see why not. It belongs to my sister, anyway.
+Dialogue: 0,0:19:29.00,0:19:31.46,Subtitle,,0000,0000,0000,,It's gonna be my treasure that I polish every day!
+Dialogue: 0,0:19:31.46,0:19:34.13,Subtitle,,0000,0000,0000,,Ah! I also wanna take home some dirt\Nfrom the spot where I first claimed a victory.
+Dialogue: 0,0:19:34.13,0:19:36.08,Subtitle,,0000,0000,0000,,Heave-ho, heave-ho, heave-ho!
+Dialogue: 0,0:19:36.33,0:19:38.29,Subtitle,,0000,0000,0000,,Say, Momo? Could you snap a picture of me?
+Dialogue: 0,0:19:38.29,0:19:40.08,Subtitle,,0000,0000,0000,,You realize you're not a baseball player, right?
+Dialogue: 0,0:19:40.92,0:19:44.42,Caption-44,,0000,0000,0000,,{\pos(294.4,108)}{\an7}THE DEMON GIRL CLAIMED HER SPOILS OF WAR
+Dialogue: 0,0:19:41.92,0:19:43.63,Subtitle,,0000,0000,0000,,This is gonna be my treasure!
+Dialogue: 0,0:19:46.38,0:19:47.63,Subtitle,,0000,0000,0000,,We finally made it...
+Dialogue: 0,0:19:47.63,0:19:50.17,Subtitle,,0000,0000,0000,,So, this is Sakura Chiyoda's Secret Spring.
+Dialogue: 0,0:19:51.00,0:19:52.54,Subtitle,,0000,0000,0000,,It's more of a waterfall, really...
+Dialogue: 0,0:19:52.83,0:19:54.29,Subtitle,,0000,0000,0000,,Yep. Just a waterfall.
+Dialogue: 0,0:19:54.29,0:19:56.21,Subtitle,,0000,0000,0000,,Are you going to skinny-dip, or did you bring a swimsuit?
+Dialogue: 0,0:19:56.21,0:19:58.58,Subtitle,,0000,0000,0000,,Or maybe white training garbs? Or a loincloth?!
+Dialogue: 0,0:19:58.58,0:20:01.21,Subtitle,,0000,0000,0000,,Will you quit being silly! I'm going in just like this!
+Dialogue: 0,0:20:12.33,0:20:18.21,Subtitle-2,,0000,0000,0000,,Wow! Wow! Wow! Wow! Wow!
+Dialogue: 0,0:20:12.46,0:20:13.04,Caption-45,,0000,0000,0000,,{\pos(217.6,295.2)}{\an7}Wow!
+Dialogue: 0,0:20:13.04,0:20:13.33,Caption-45,,0000,0000,0000,,{\pos(371.2,122.4)}{\an7}Wow!
+Dialogue: 0,0:20:13.54,0:20:13.88,Caption-45,,0000,0000,0000,,{\pos(1024,122.4)}{\an7}Wow!
+Dialogue: 0,0:20:14.04,0:20:14.54,Caption-45,,0000,0000,0000,,{\pos(230.4,374.4)}{\an7}Wow!
+Dialogue: 0,0:20:14.54,0:20:14.75,Caption-45,,0000,0000,0000,,{\pos(921.6,288)}{\an7}Wow!
+Dialogue: 0,0:20:14.75,0:20:21.71,Caption-46,,0000,0000,0000,,{\pos(179.2,93.6)}{\an7}Wow!
+Dialogue: 0,0:20:14.75,0:20:21.71,Caption-46,,0000,0000,0000,,{\pos(691.2,144)}{\an7}Wow!
+Dialogue: 0,0:20:14.75,0:20:21.71,Caption-46,,0000,0000,0000,,{\pos(115.2,180)}{\an7}Wow!
+Dialogue: 0,0:20:14.75,0:20:21.71,Caption-46,,0000,0000,0000,,{\pos(524.8,230.4)}{\an7}Wow!
+Dialogue: 0,0:20:15.54,0:20:18.21,Subtitle,,0000,0000,0000,,Seeing Momo get hit by this waterfall is so funny!
+Dialogue: 0,0:20:19.21,0:20:21.50,Subtitle,,0000,0000,0000,,Can you stop with the bouncy tail, please?
+Dialogue: 0,0:20:21.75,0:20:24.96,Subtitle,,0000,0000,0000,,How is it Momo? Do you feel any different?
+Dialogue: 0,0:20:30.67,0:20:31.17,Subtitle,,0000,0000,0000,,I feel nothing.
+Dialogue: 0,0:20:37.83,0:20:39.96,Subtitle,,0000,0000,0000,,I swear, the friendlier we get\Nthe more of a nuisance you become!
+Dialogue: 0,0:20:39.96,0:20:41.33,Subtitle,,0000,0000,0000,,Ka-splash...
+Dialogue: 0,0:20:42.96,0:20:45.75,Subtitle,,0000,0000,0000,,Look! Your body has started glowing a little bit, Momo!
+Dialogue: 0,0:20:46.38,0:20:49.75,Subtitle,,0000,0000,0000,,I'm feeling better somehow.\NI guess this stuff must really work.
+Dialogue: 0,0:20:50.00,0:20:54.29,Subtitle,,0000,0000,0000,,Think I could do this at home if we called a contractor\Nand had them take it all back in a tanker truck?
+Dialogue: 0,0:20:54.46,0:20:57.50,Subtitle,,0000,0000,0000,,Hold on, I'm betting it wouldn't be as effective\Nwithout the leylines around here.
+Dialogue: 0,0:20:57.63,0:20:59.83,Subtitle,,0000,0000,0000,,I thought standing under waterfalls\Nwas supposed to cleanse wicked thoughts...
+Dialogue: 0,0:20:59.83,0:21:01.29,Caption-47,,0000,0000,0000,,{\pos(665.6,496.8)}{\an7}BANDA TERRACE
+Dialogue: 0,0:21:01.58,0:21:03.17,Subtitle,,0000,0000,0000,,Amazing!
+Dialogue: 0,0:21:03.29,0:21:05.75,Subtitle,,0000,0000,0000,,You brought back so much\Nof the mythical water for me, thanks!
+Dialogue: 0,0:21:05.75,0:21:07.38,Subtitle,,0000,0000,0000,,It was really rough...
+Dialogue: 0,0:21:07.38,0:21:09.71,Subtitle,,0000,0000,0000,,Care to explain why you're making a lab in my kitchen?
+Dialogue: 0,0:21:10.04,0:21:11.88,Subtitle,,0000,0000,0000,,Because there's a kitchen for me to use!
+Dialogue: 0,0:21:13.38,0:21:14.25,Subtitle,,0000,0000,0000,,What's that?
+Dialogue: 0,0:21:15.21,0:21:16.04,Subtitle,,0000,0000,0000,,Oh!
+Dialogue: 0,0:21:16.04,0:21:17.96,Subtitle,,0000,0000,0000,,This is a little prize that I picked up after winning a bat-
+Dialogue: 0,0:21:17.96,0:21:20.00,Subtitle,,0000,0000,0000,,Oh! My! Gosh!
+Dialogue: 0,0:21:20.00,0:21:22.71,Subtitle,,0000,0000,0000,,O-outstanding! Such a high-quality pink gem!
+Dialogue: 0,0:21:22.71,0:21:25.21,Subtitle,,0000,0000,0000,,It's a super ultra power stone that's incredibly valuable!
+Dialogue: 0,0:21:25.21,0:21:26.54,Subtitle,,0000,0000,0000,,You don't say?
+Dialogue: 0,0:21:26.54,0:21:28.88,Subtitle,,0000,0000,0000,,It's even better than the mythical water!
+Dialogue: 0,0:21:28.88,0:21:30.00,Subtitle,,0000,0000,0000,,But it's my treasur-
+Dialogue: 0,0:21:30.00,0:21:31.33,Subtitle,,0000,0000,0000,,Thank you so much!
+Dialogue: 0,0:21:31.33,0:21:31.75,Subtitle,,0000,0000,0000,,Huh?
+Dialogue: 0,0:21:31.75,0:21:33.33,Subtitle,,0000,0000,0000,,This is the greatest souvenir of all time!
+Dialogue: 0,0:21:33.33,0:21:35.25,Subtitle,,0000,0000,0000,,You two really are the best!
+Dialogue: 0,0:21:35.25,0:21:36.58,Subtitle-2,,0000,0000,0000,,Oh joy! Oh joy!
+Dialogue: 0,0:21:35.25,0:21:37.38,Subtitle,,0000,0000,0000,,Listen, it's actually my treasure that I won and...!
+Dialogue: 0,0:21:37.38,0:21:38.96,Caption-48,,0000,0000,0000,,{\pos(934.4,144)}{\an7}GRIND
+Dialogue: 0,0:21:37.38,0:21:38.96,Caption-49,,0000,0000,0000,,{\pos(204.8,237.6)}{\an7}GRIND
+Dialogue: 0,0:21:37.38,0:21:38.96,Caption-50,,0000,0000,0000,,{\pos(281.6,352.8)}{\an7}GRIND
+Dialogue: 0,0:21:37.38,0:21:38.96,Caption-51,,0000,0000,0000,,{\pos(819.2,403.2)}{\an7}GRIND
+Dialogue: 0,0:21:38.96,0:21:42.00,Subtitle,,0000,0000,0000,,Yes! I can make you the ultimate elixir with this!
+Dialogue: 0,0:21:38.96,0:21:45.04,Caption-52,,0000,0000,0000,,{\pos(179.2,122.4)}{\an7}GRIND          GRIND           GRIND           GRIND
+Dialogue: 0,0:21:42.08,0:21:44.75,Subtitle,,0000,0000,0000,,Just you wait, Shamikooooooo!
+Dialogue: 0,0:21:45.04,0:21:48.58,Caption-53,,0000,0000,0000,,{\pos(1049.6,187.2)}{\an7}My treasure...
+Dialogue: 0,0:21:46.04,0:21:47.67,Subtitle,,0000,0000,0000,,My treasure...
+Dialogue: 0,0:22:11.38,0:22:15.54,Subtitle,,0000,0000,0000,,Listen. It's okay because your beautiful memories\Nof that moment will live on in your heart forever.
+Dialogue: 0,0:22:15.54,0:22:17.92,Subtitle,,0000,0000,0000,,You're not gonna get me to fall for that sappy crap!
+Dialogue: 0,0:22:18.21,0:22:22.58,Subtitle,,0000,0000,0000,,Don't give up, Shamiko! At the very least,\Ndisplay the dirt you got by putting it in a nice glass jar.
+Dialogue: 0,0:22:22.58,0:22:25.38,Subtitle,,0000,0000,0000,,Now to have that girl pack up\Nand get out of my apartment.
+Dialogue: 0,0:22:44.08,0:22:46.67,Song,,0000,0000,0000,,Mata aeta ne drama nandatte? (howa howa)
+Dialogue: 0,0:22:46.67,0:22:49.67,Song,,0000,0000,0000,,Sugu (sugu!) oshie ni mo icchauzo (utou!)
+Dialogue: 0,0:22:49.83,0:22:52.58,Song,,0000,0000,0000,,Kakyuuteki naruhaya de (saa!)
+Dialogue: 0,0:22:52.71,0:22:55.21,Song,,0000,0000,0000,,Ara post mo "ohayou" nante (pikopiko)
+Dialogue: 0,0:22:55.21,0:22:57.42,Song,,0000,0000,0000,,Mou shippo made saeteru (waa!)
+Dialogue: 0,0:22:57.42,0:23:01.25,Song,,0000,0000,0000,,Hakusen o tondette itsu mentsudoeba
+Dialogue: 0,0:23:01.25,0:23:04.00,Song,,0000,0000,0000,,Kyou mo hajimatteku
+Dialogue: 0,0:23:04.17,0:23:07.79,Song,,0000,0000,0000,,Totsuzen ni mystery
+Dialogue: 0,0:23:07.92,0:23:11.17,Song,,0000,0000,0000,,Kurakura mayou kedo
+Dialogue: 0,0:23:11.42,0:23:15.71,Song,,0000,0000,0000,,Te to te o tori doko made mo susume
+Dialogue: 0,0:23:19.04,0:23:22.63,Song,,0000,0000,0000,,Guruguru machi wa mawari kagayaku
+Dialogue: 0,0:23:22.75,0:23:25.54,Song,,0000,0000,0000,,Korokoro toehatae shite
+Dialogue: 0,0:23:25.54,0:23:28.25,Song,,0000,0000,0000,,Yume o mazeta yoikagen wa
+Dialogue: 0,0:23:28.25,0:23:31.21,Song,,0000,0000,0000,,Kimi ni hana o sakaseru yo
+Dialogue: 0,0:23:31.21,0:23:34.04,Song,,0000,0000,0000,,Yomo made kakomu tetragon
+Dialogue: 0,0:23:34.17,0:23:37.00,Song,,0000,0000,0000,,Aa machikado ni hanataba
+Dialogue: 0,0:23:37.00,0:23:39.96,Song,,0000,0000,0000,,Nee ima wa mou sukoshi
+Dialogue: 0,0:23:40.21,0:23:44.00,Song,,0000,0000,0000,,Sottosotto sono hana o misete
+Dialogue: 0,0:23:44.21,0:23:47.50,Song,,0000,0000,0000,,Yokubacchaeba mou ikkai
+Dialogue: 0,0:23:56.04,0:24:10.96,Caption-54,,0000,0000,0000,,{\pos(128,100.8)}{\an7}PREVIEW
+Dialogue: 0,0:23:57.08,0:24:00.58,Subtitle,,0000,0000,0000,,Momo! Is the power of Ms. Sakura's\Nspring working on you?
+Dialogue: 0,0:24:00.58,0:24:03.58,Subtitle,,0000,0000,0000,,Yeah, there's a pleasant warmth\Nenveloping my whole body.
+Dialogue: 0,0:24:03.58,0:24:06.08,Subtitle,,0000,0000,0000,,Shamiko, I need your help! But please don't scoop it up!
+Dialogue: 0,0:24:06.08,0:24:06.75,Subtitle,,0000,0000,0000,,Huh?!
+Dialogue: 0,0:24:06.96,0:24:08.96,Subtitle,,0000,0000,0000,,Now it's time for us to train your magic power, Shamiko!
+Dialogue: 0,0:24:06.96,0:24:10.96,Caption-55,,0000,0000,0000,,{\pos(409.6,547.2)}{\an7}THE ANCESTOR'S DOJO?! DEMONKIND'S ULTIMATE WEAPON
+Dialogue: 0,0:24:08.96,0:24:10.83,Subtitle,,0000,0000,0000,,Hey, I know a good way to do that!

@@ -1,0 +1,696 @@
+﻿[Script Info]
+ScriptType: v4.00+
+Collisions: Normal
+ScaledBorderAndShadow: Yes
+PlayResX: 1280
+PlayResY: 720
+Timer: 100.0000
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Caption-71,Arial,27,&H00a35cff,&H00a35cff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-27,Arial,21,&H00416fe7,&H00416fe7,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-72,Arial,27,&H00fc01dd,&H00fc01dd,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-28,Arial,21,&H00691ee0,&H00691ee0,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-29,Arial,21,&H0084ab3e,&H0084ab3e,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-40,Arial,34,&H00f4ed96,&H00f4ed96,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-41,Arial,27,&H008cfcf0,&H008cfcf0,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Song-2,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-42,Arial,21,&H00db6bf7,&H00db6bf7,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-43,Arial,21,&H00f9b3f0,&H00f9b3f0,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Default,Roboto Medium,40,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-44,Arial,34,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-45,Arial,21,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-46,Arial,21,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-47,Arial,27,&H00c972f4,&H00c972f4,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-10,Arial,27,&H000b26e6,&H000b26e6,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-48,Arial,27,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-11,Arial,21,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-49,Arial,27,&H00cf8d4b,&H00cf8d4b,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-12,Arial,27,&H008577eb,&H008577eb,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Subtitle-2,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-13,Arial,27,&H0087b9ee,&H0087b9ee,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Subtitle-3,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-14,Arial,27,&H00da70f1,&H00da70f1,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-15,Arial,27,&H00f46ed5,&H00f46ed5,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Subtitle-4,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-60,Arial,27,&H0041f49e,&H0041f49e,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Subtitle-5,Roboto Medium,52,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-16,Arial,27,&H00fab787,&H00fab787,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-61,Arial,27,&H00867df8,&H00867df8,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Subtitle-6,Roboto Medium,52,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption,Arial,27,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Subtitle,Roboto Medium,52,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-17,Arial,27,&H00f3f18d,&H00f3f18d,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-62,Arial,34,&H00867df8,&H00867df8,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-18,Arial,40,&H0061c5e3,&H0061c5e3,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-63,Arial,27,&H00f0e84e,&H00f0e84e,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-19,Arial,27,&H00808fa8,&H00808fa8,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-64,Arial,21,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-65,Arial,27,&H00fb7251,&H00fb7251,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-66,Arial,27,&H00dcdb9f,&H00dcdb9f,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-67,Arial,27,&H00c799e9,&H00c799e9,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-30,Arial,21,&H00cc6f82,&H00cc6f82,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-68,Arial,27,&H005e3fda,&H005e3fda,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-31,Arial,27,&H00fffffe,&H00fffffe,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-69,Arial,27,&H003709d7,&H003709d7,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-32,Arial,27,&H0061b1d2,&H0061b1d2,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-33,Arial,27,&H0068eaff,&H0068eaff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-34,Arial,21,&H00c29d9a,&H00c29d9a,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-35,Arial,27,&H003aa0e8,&H003aa0e8,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-36,Arial,21,&H00ab7de5,&H00ab7de5,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-37,Arial,21,&H00878e99,&H00878e99,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-38,Arial,21,&H00878e99,&H00878e99,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-39,Arial,27,&H00878e99,&H00878e99,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-50,Arial,27,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-51,Arial,21,&H0035a0fb,&H0035a0fb,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-52,Arial,34,&H00fff6ff,&H00fff6ff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-53,Arial,27,&H00f5e9a5,&H00f5e9a5,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-54,Arial,21,&H0096ebff,&H0096ebff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-2,Arial,21,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-55,Arial,21,&H00a6bbdf,&H00a6bbdf,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-3,Arial,27,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-56,Arial,21,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-4,Arial,27,&H00e7d8fd,&H00e7d8fd,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-57,Arial,27,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-5,Arial,21,&H00e4c8a2,&H00e4c8a2,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Song,Roboto Medium,44,&H00ffffff,&H00ffffff,&H00000000,&H00000000,0,0,0,0,100.00,100.00,0.00,0.00,1,2.60,0.00,2,20,20,46,1
+Style: Caption-20,Arial,21,&H006494ec,&H006494ec,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-58,Arial,27,&H00f76ecd,&H00f76ecd,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-6,Arial,21,&H0059f0ff,&H0059f0ff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-21,Arial,21,&H00818a98,&H00818a98,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-59,Arial,34,&H008f57f7,&H008f57f7,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-7,Arial,27,&H00fcf9fd,&H00fcf9fd,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-22,Arial,21,&H00adf45e,&H00adf45e,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-8,Arial,27,&H0089f4f2,&H0089f4f2,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-23,Arial,21,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-9,Arial,34,&H000b26e6,&H000b26e6,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-24,Arial,27,&H00dafaff,&H00dafaff,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-25,Arial,21,&H00a2739a,&H00a2739a,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-70,Arial,34,&H00ffb1ed,&H00ffb1ed,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+Style: Caption-26,Arial,21,&H00cf6b7c,&H00cf6b7c,&H00000000,&H00000000,-1,0,0,0,100.00,100.00,0.00,0.00,1,1.00,2.00,2,20,20,20,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:06.08,0:00:09.17,Subtitle,,0000,0000,0000,,I wanna invent a good special attack\Nthat's fit for a Shadow Mistress like me!
+Dialogue: 0,0:00:09.17,0:00:12.29,Caption,,0000,0000,0000,,{\pos(576,360)}{\an7}HOW THINGS USUALLY GO FOR SHAMIKO
+Dialogue: 0,0:00:09.17,0:00:12.29,Caption-2,,0000,0000,0000,,{\pos(627.2,410.4)}{\an7}SHE GETS INVOLVED IN SOMETHING
+Dialogue: 0,0:00:09.17,0:00:12.29,Caption-2,,0000,0000,0000,,{\pos(627.2,460.8)}{\an7}AND THEN ENDS UP BEING CHASED
+Dialogue: 0,0:00:09.33,0:00:12.08,Subtitle,,0000,0000,0000,,I've been getting chased around a lot lately.
+Dialogue: 0,0:00:12.38,0:00:15.54,Subtitle,,0000,0000,0000,,So I think having a super move to use\Nwhen I'm in trouble would be really awesome!
+Dialogue: 0,0:00:12.50,0:00:24.83,Caption-2,,0000,0000,0000,,{\pos(550.4,187.2)}{\an7}HOW THINGS USUALLY GO FOR SHAMIKO
+Dialogue: 0,0:00:12.50,0:00:24.83,Caption-2,,0000,0000,0000,,{\pos(563.2,237.6)}{\an7}SHE GETS INVOLVED IN SOMETHING
+Dialogue: 0,0:00:12.50,0:00:24.83,Caption-2,,0000,0000,0000,,{\pos(563.2,288)}{\an7}AND THEN ENDS UP BEING CHASED
+Dialogue: 0,0:00:15.75,0:00:17.58,Subtitle,,0000,0000,0000,,Like, "Shadow Thingy!"
+Dialogue: 0,0:00:17.96,0:00:19.42,Subtitle,,0000,0000,0000,,Or some cool-sounding name like that.
+Dialogue: 0,0:00:19.71,0:00:21.38,Subtitle,,0000,0000,0000,,Forget about the name.
+Dialogue: 0,0:00:21.38,0:00:24.83,Subtitle,,0000,0000,0000,,Start by figuring out something reliable that you\Ncan attack your opponents with in an emergency.
+Dialogue: 0,0:00:25.29,0:00:27.83,Subtitle,,0000,0000,0000,,Like beams, or punches, or a deathlock.
+Dialogue: 0,0:00:29.21,0:00:31.33,Subtitle,,0000,0000,0000,,We're talking about when I'm in the dreamscape, right?
+Dialogue: 0,0:00:31.33,0:00:33.42,Subtitle,,0000,0000,0000,,Just think about what you can do in reality for now.
+Dialogue: 0,0:00:33.75,0:00:37.71,Subtitle-2,,0000,0000,0000,,Plip plop. Plip plop. Plip plop. Plip plop.
+Dialogue: 0,0:00:34.96,0:00:37.71,Subtitle,,0000,0000,0000,,Then the only thing I can reliably attack with are tears.
+Dialogue: 0,0:00:37.71,0:00:39.96,Subtitle,,0000,0000,0000,,Okay, so I guess your super move will be\N"Shadow Weepy Tears."
+Dialogue: 0,0:00:40.58,0:00:44.29,Subtitle,,0000,0000,0000,,The stress of dealing with an emergency situation\Nwill prevent you from using your full strength.
+Dialogue: 0,0:00:44.42,0:00:47.75,Subtitle,,0000,0000,0000,,Not to mention that you need different strategies\Nto get out of different situations.
+Dialogue: 0,0:00:48.00,0:00:48.92,Subtitle,,0000,0000,0000,,So let's do some practice!
+Dialogue: 0,0:00:48.92,0:00:49.38,Subtitle,,0000,0000,0000,,Grip.
+Dialogue: 0,0:00:49.08,0:00:49.63,Caption-3,,0000,0000,0000,,{\pos(665.6,468)}{\an7}GRIP
+Dialogue: 0,0:00:49.63,0:00:51.71,Subtitle,,0000,0000,0000,,Uh oh. I don't like the sound of that.
+Dialogue: 0,0:00:52.00,0:00:54.38,Subtitle,,0000,0000,0000,,Okay, situation 1: when someone grabs you\Nby the collar, do this!
+Dialogue: 0,0:00:52.38,0:00:53.13,Subtitle-2,,0000,0000,0000,,Huh?
+Dialogue: 0,0:00:54.38,0:00:55.17,Subtitle,,0000,0000,0000,,Blargh!
+Dialogue: 0,0:00:54.42,0:00:55.04,Caption-4,,0000,0000,0000,,{\pos(921.6,144)}{\an7}Blargh!
+Dialogue: 0,0:00:55.25,0:00:57.54,Subtitle,,0000,0000,0000,,Situation 2: when you need to incapacitate\Nsomeone who's resisting, do this!\N{\rSubtitle-3}Whoa, mind if I snap some pics?{\r}
+Dialogue: 0,0:00:55.58,0:00:58.50,Caption-5,,0000,0000,0000,,{\pos(358.4,194.4)}{\an7}Click
+Dialogue: 0,0:00:55.58,0:00:58.50,Caption-5,,0000,0000,0000,,{\pos(384,244.8)}{\an7}Click
+Dialogue: 0,0:00:55.59,0:00:58.50,Caption-5,,0000,0000,0000,,{\pos(409.6,295.2)}{\an7}Click
+Dialogue: 0,0:00:57.54,0:00:58.33,Subtitle,,0000,0000,0000,,Bwlarghef!
+Dialogue: 0,0:00:57.92,0:00:58.50,Caption-4,,0000,0000,0000,,{\pos(870.4,496.8)}{\an7}Bwlarghef!
+Dialogue: 0,0:00:58.63,0:01:00.96,Subtitle,,0000,0000,0000,,I can't stop my Shadow Weepy Tears from coming out.
+Dialogue: 0,0:00:58.75,0:00:59.13,Caption-6,,0000,0000,0000,,{\pos(384,345.6)}{\an7}Click
+Dialogue: 0,0:00:58.75,0:00:59.13,Caption-6,,0000,0000,0000,,{\pos(384,396)}{\an7}Click
+Dialogue: 0,0:00:58.75,0:00:59.13,Caption-6,,0000,0000,0000,,{\pos(384,446.4)}{\an7}Click
+Dialogue: 0,0:00:59.50,0:00:59.88,Caption-6,,0000,0000,0000,,{\pos(627.2,122.4)}{\an7}Click
+Dialogue: 0,0:00:59.50,0:00:59.88,Caption-6,,0000,0000,0000,,{\pos(665.6,172.8)}{\an7}Click
+Dialogue: 0,0:00:59.50,0:00:59.88,Caption-6,,0000,0000,0000,,{\pos(691.2,223.2)}{\an7}Click
+Dialogue: 0,0:01:00.00,0:01:00.25,Caption-6,,0000,0000,0000,,{\pos(384,345.6)}{\an7}Click
+Dialogue: 0,0:01:00.00,0:01:00.25,Caption-6,,0000,0000,0000,,{\pos(384,396)}{\an7}Click
+Dialogue: 0,0:01:00.00,0:01:00.25,Caption-6,,0000,0000,0000,,{\pos(384,446.4)}{\an7}Click
+Dialogue: 0,0:01:01.00,0:01:01.38,Caption-6,,0000,0000,0000,,{\pos(627.2,122.4)}{\an7}Click
+Dialogue: 0,0:01:01.00,0:01:01.38,Caption-6,,0000,0000,0000,,{\pos(665.6,172.8)}{\an7}Click
+Dialogue: 0,0:01:01.00,0:01:01.38,Caption-6,,0000,0000,0000,,{\pos(691.2,223.2)}{\an7}Click
+Dialogue: 0,0:01:01.46,0:01:02.88,Subtitle,,0000,0000,0000,,Well, now you've gained some experience,
+Dialogue: 0,0:01:01.88,0:01:02.25,Caption-6,,0000,0000,0000,,{\pos(384,345.6)}{\an7}Click
+Dialogue: 0,0:01:01.88,0:01:02.25,Caption-6,,0000,0000,0000,,{\pos(384,396)}{\an7}Click
+Dialogue: 0,0:01:01.88,0:01:02.25,Caption-6,,0000,0000,0000,,{\pos(384,446.4)}{\an7}Click
+Dialogue: 0,0:01:03.29,0:01:06.00,Subtitle,,0000,0000,0000,,but you can't use any of the techniques\NI just showed you because
+Dialogue: 0,0:01:06.00,0:01:07.88,Subtitle,,0000,0000,0000,,your opponents typically won't use martial arts to attack.
+Dialogue: 0,0:01:07.88,0:01:09.04,Subtitle,,0000,0000,0000,,Go ahead and forget it all.
+Dialogue: 0,0:01:09.04,0:01:09.92,Subtitle,,0000,0000,0000,,Curse you!
+Dialogue: 0,0:01:21.42,0:01:25.08,Song,,0000,0000,0000,,The excitement has just begun!
+Dialogue: 0,0:01:28.79,0:01:32.67,Song,,0000,0000,0000,,I have a feeling that a miracle will occur
+Dialogue: 0,0:01:32.67,0:01:39.92,Song,,0000,0000,0000,,A novice's skill is enough. Now, let's go!
+Dialogue: 0,0:01:38.25,0:01:42.88,Song-2,,0000,0000,0000,,It's all or nothing. We can go anywhere
+Dialogue: 0,0:01:43.38,0:01:47.63,Song,,0000,0000,0000,,Let me hear more even the sound of the core
+Dialogue: 0,0:01:47.63,0:01:52.42,Song,,0000,0000,0000,,If you and I put our hands together, there is nothing to fear
+Dialogue: 0,0:01:53.04,0:01:54.92,Song,,0000,0000,0000,,When I'm at a loss what to do,
+Dialogue: 0,0:01:55.42,0:02:01.04,Song,,0000,0000,0000,,I'll remember that you are here for me
+Dialogue: 0,0:02:04.04,0:02:08.54,Song,,0000,0000,0000,,You and I look up at the same sky
+Dialogue: 0,0:02:08.75,0:02:12.92,Song,,0000,0000,0000,,We smile at each other and overcome hardship, too
+Dialogue: 0,0:02:13.67,0:02:18.17,Song,,0000,0000,0000,,Doing our best for someone
+Dialogue: 0,0:02:18.33,0:02:20.75,Song,,0000,0000,0000,,Isn't bad, too,
+Dialogue: 0,0:02:21.29,0:02:25.33,Song,,0000,0000,0000,,We are side by side again today
+Dialogue: 0,0:02:28.54,0:02:32.58,Song,,0000,0000,0000,,The excitement has just begun
+Dialogue: 0,0:02:40.17,0:02:45.04,Caption-7,,0000,0000,0000,,{\pos(537.6,57.6)}{\an7}SPARKS FLY?!
+Dialogue: 0,0:02:40.17,0:02:45.04,Caption-7,,0000,0000,0000,,{\pos(307.2,280.8)}{\an7}LIGHT AND DARK GO ON A JOINT EXCURSION!
+Dialogue: 0,0:02:45.29,0:02:48.79,Subtitle,,0000,0000,0000,,I made plans to visit the zoo with Momo and Mikan.
+Dialogue: 0,0:02:49.25,0:02:52.38,Subtitle,,0000,0000,0000,,I wanna eat a lunch that you\Nspared no effort to make for me.
+Dialogue: 0,0:02:52.54,0:02:55.88,Subtitle,,0000,0000,0000,,This is my big chance to show\Njust how dependable a Demon Girl can be!
+Dialogue: 0,0:02:56.63,0:02:59.96,Subtitle,,0000,0000,0000,,I'm gonna make the greatest\Nand most sublime lunch in existence!
+Dialogue: 0,0:03:08.71,0:03:11.17,Subtitle,,0000,0000,0000,,I'll do a practice run using\Nthe ingredients we have in the house first.
+Dialogue: 0,0:03:12.42,0:03:13.83,Caption-8,,0000,0000,0000,,{\pos(1075.2,208.8)}{\an7}SOME
+Dialogue: 0,0:03:12.42,0:03:13.83,Caption-8,,0000,0000,0000,,{\pos(1062.4,338.4)}{\an7}HOURS
+Dialogue: 0,0:03:12.42,0:03:13.83,Caption-8,,0000,0000,0000,,{\pos(1075.2,468)}{\an7}LATER
+Dialogue: 0,0:03:19.96,0:03:22.29,Subtitle,,0000,0000,0000,,What do you think? How does it look?
+Dialogue: 0,0:03:22.29,0:03:24.46,Subtitle,,0000,0000,0000,,Who are you talking to, Shamiko?
+Dialogue: 0,0:03:24.46,0:03:26.96,Subtitle,,0000,0000,0000,,I think it's boring since the colors don't pop.
+Dialogue: 0,0:03:26.96,0:03:30.33,Subtitle,,0000,0000,0000,,If we're going out for a picnic,\Nthen I want it to have more glitz and glam.
+Dialogue: 0,0:03:30.54,0:03:34.04,Subtitle,,0000,0000,0000,,I think the darker tones look nice.\NFitting for a demon, anyway.
+Dialogue: 0,0:03:34.04,0:03:37.96,Subtitle,,0000,0000,0000,,But I need to take the magical girls by surprise\Nby making something that packs a punch!
+Dialogue: 0,0:03:37.96,0:03:40.71,Subtitle,,0000,0000,0000,,Okay, try covering the whole thing\Nwith seaweed to make ipackt pitch-black,
+Dialogue: 0,0:03:40.71,0:03:43.13,Subtitle,,0000,0000,0000,,then adding a healthy splash of ketchup\Nright in the middle!
+Dialogue: 0,0:03:42.58,0:03:46.21,Caption-9,,0000,0000,0000,,{\pos(486.4,100.8)}{\an7}CURSED
+Dialogue: 0,0:03:43.63,0:03:46.13,Subtitle,,0000,0000,0000,,Demonic Lunch, garnished with gore.
+Dialogue: 0,0:03:43.71,0:03:46.08,Caption-10,,0000,0000,0000,,{\pos(217.6,403.2)}{\an7}DEMONIC LUNCH
+Dialogue: 0,0:03:43.71,0:03:46.08,Caption-10,,0000,0000,0000,,{\pos(217.6,453.6)}{\an7}~GARNISHED WITH GORE~
+Dialogue: 0,0:03:46.21,0:03:48.08,Subtitle,,0000,0000,0000,,That's not the kind of surprise I meant!
+Dialogue: 0,0:03:48.08,0:03:49.33,Subtitle,,0000,0000,0000,,Aw, poo...
+Dialogue: 0,0:03:49.54,0:03:52.58,Subtitle,,0000,0000,0000,,Gosh, Shamiko, the color of this lunch you made\Nreminds me of dead leaves...
+Dialogue: 0,0:03:52.58,0:03:55.46,Subtitle,,0000,0000,0000,,I think I'm going to retract my offer\Nto become your vassal.
+Dialogue: 0,0:03:55.46,0:03:56.46,Subtitle,,0000,0000,0000,,Whaaaaaaat?!
+Dialogue: 0,0:03:56.71,0:04:00.75,Subtitle,,0000,0000,0000,,I just don't have enough experience making lunches.\NThis calls for a different approach!
+Dialogue: 0,0:04:01.04,0:04:04.58,Subtitle,,0000,0000,0000,,I'll go ahead and put this lunch\Nthat you made in the fridge, then.
+Dialogue: 0,0:04:04.58,0:04:07.25,Subtitle,,0000,0000,0000,,The dead leaf coloring makes it seem extra appetizing!
+Dialogue: 0,0:04:07.46,0:04:10.92,Caption-11,,0000,0000,0000,,{\pos(576,79.2)}{\an7}CAFÉ
+Dialogue: 0,0:04:07.46,0:04:10.92,Caption-11,,0000,0000,0000,,{\pos(640,129.6)}{\an7}ASURA
+Dialogue: 0,0:04:08.08,0:04:10.13,Subtitle,,0000,0000,0000,,You want help making a box lunch?
+Dialogue: 0,0:04:10.33,0:04:10.92,Subtitle,,0000,0000,0000,,Yeah.
+Dialogue: 0,0:04:11.29,0:04:15.38,Subtitle,,0000,0000,0000,,Can you teach me how to make a lunch\Nthat would leave a magical girl drooling?
+Dialogue: 0,0:04:15.50,0:04:18.63,Subtitle,,0000,0000,0000,,I figured you two might know since you sold\Nthose fancy box lunches the other day.
+Dialogue: 0,0:04:18.92,0:04:22.46,Subtitle,,0000,0000,0000,,Ah, you mean the ones\Nfrom the shopping district festival?
+Dialogue: 0,0:04:19.46,0:04:22.46,Subtitle-4,,0000,0000,0000,,We've got box lunches for sale! Buy tasty box lunches here!
+Dialogue: 0,0:04:22.46,0:04:23.58,Subtitle,,0000,0000,0000,,Yes, those ones!
+Dialogue: 0,0:04:23.75,0:04:26.92,Subtitle,,0000,0000,0000,,Well, that tickles me pink! I'll gladly teach you, hun!
+Dialogue: 0,0:04:27.29,0:04:30.08,Subtitle,,0000,0000,0000,,Alrighty, the first step to a good lunch\Nis picking your ingredients.
+Dialogue: 0,0:04:30.96,0:04:31.96,Subtitle,,0000,0000,0000,,Are those leaves?
+Dialogue: 0,0:04:32.08,0:04:37.25,Subtitle,,0000,0000,0000,,From the right: one that paralyzes, one that causes\Ndrowsiness, and one that heats the body up.
+Dialogue: 0,0:04:37.50,0:04:40.21,Subtitle,,0000,0000,0000,,Um, just so we're clear, I'm not trying to drug anybody!
+Dialogue: 0,0:04:40.21,0:04:43.71,Caption-12,,0000,0000,0000,,{\pos(153.6,93.6)}{\an7}LEAF THAT
+Dialogue: 0,0:04:40.21,0:04:43.71,Caption-13,,0000,0000,0000,,{\pos(102.4,144)}{\an7}HEATS THE BODY
+Dialogue: 0,0:04:40.21,0:04:43.71,Caption-14,,0000,0000,0000,,{\pos(576,86.4)}{\an7}LEAF THAT
+Dialogue: 0,0:04:40.21,0:04:43.71,Caption-15,,0000,0000,0000,,{\pos(512,136.8)}{\an7}CAUSES DROWSINESS
+Dialogue: 0,0:04:40.21,0:04:43.71,Caption-16,,0000,0000,0000,,{\pos(972.8,93.6)}{\an7}LEAF THAT
+Dialogue: 0,0:04:40.21,0:04:43.71,Caption-17,,0000,0000,0000,,{\pos(972.8,144)}{\an7}PARALYZES
+Dialogue: 0,0:04:40.21,0:04:43.71,Caption-18,,0000,0000,0000,,{\pos(512,453.6)}{\an7}100% ORGANIC
+Dialogue: 0,0:04:40.67,0:04:43.67,Subtitle,,0000,0000,0000,,Ain't nothing to worry about, they're totally organic!
+Dialogue: 0,0:04:44.08,0:04:46.29,Subtitle,,0000,0000,0000,,So, you wanna make a colorful lunch, huh?
+Dialogue: 0,0:04:46.29,0:04:49.00,Subtitle,,0000,0000,0000,,Personally, I think a brown shade is just fine.
+Dialogue: 0,0:04:49.33,0:04:52.33,Subtitle,,0000,0000,0000,,Because what matters most\Nare the vibes that you put into it.
+Dialogue: 0,0:04:52.33,0:04:53.71,Subtitle,,0000,0000,0000,,What do you mean?
+Dialogue: 0,0:04:54.13,0:04:58.33,Subtitle,,0000,0000,0000,,Just picture your friends happily chowing down\Non your food and then let your hands do the work.
+Dialogue: 0,0:04:58.33,0:05:01.13,Subtitle,,0000,0000,0000,,Is it just me or are your hands glowing?!\NIs everything okay?!
+Dialogue: 0,0:05:01.63,0:05:03.00,Subtitle,,0000,0000,0000,,Here. For you, bossman!
+Dialogue: 0,0:05:03.00,0:05:03.88,Subtitle,,0000,0000,0000,,Uh, no thanks.
+Dialogue: 0,0:05:04.08,0:05:05.96,Subtitle,,0000,0000,0000,,Eat up!
+Dialogue: 0,0:05:06.13,0:05:09.58,Subtitle,,0000,0000,0000,,This tasty morsel is filled with my positive vibes...
+Dialogue: 0,0:05:09.88,0:05:11.75,Subtitle,,0000,0000,0000,,Can't you see?
+Dialogue: 0,0:05:12.63,0:05:13.71,Subtitle,,0000,0000,0000,,Eat up!
+Dialogue: 0,0:05:15.88,0:05:21.33,Subtitle,,0000,0000,0000,,Amazing, Lico. There are so many rainbow leaves\Nflying through the air right now...
+Dialogue: 0,0:05:21.46,0:05:22.88,Subtitle,,0000,0000,0000,,Ain't it just wonderful?
+Dialogue: 0,0:05:22.88,0:05:24.96,Subtitle,,0000,0000,0000,,That's a big nope! Please teach me something else!
+Dialogue: 0,0:05:24.96,0:05:33.08,Caption-19,,0000,0000,0000,,{\pos(217.6,151.2)}{\an7}GLOWING RICEBALL
+Dialogue: 0,0:05:24.96,0:05:33.08,Caption-20,,0000,0000,0000,,{\pos(102.4,223.2)}{\an7}RICE:     A GOOD AMOUNT
+Dialogue: 0,0:05:24.96,0:05:33.08,Caption-20,,0000,0000,0000,,{\pos(102.4,309.6)}{\an7}SALT:          TO TASTE
+Dialogue: 0,0:05:24.96,0:05:33.08,Caption-21,,0000,0000,0000,,{\pos(908.8,280.8)}{\an7}MAKES YOU HALLUCINATE
+Dialogue: 0,0:05:24.96,0:05:33.08,Caption-22,,0000,0000,0000,,{\pos(960,345.6)}{\an7}RAINBOW LEAVES
+Dialogue: 0,0:05:24.96,0:05:33.08,Caption-20,,0000,0000,0000,,{\pos(102.4,417.6)}{\an7}SEAWEED:      DAMP
+Dialogue: 0,0:05:24.96,0:05:33.08,Caption-20,,0000,0000,0000,,{\pos(102.4,504)}{\an7}VIBES:         PLENTIFUL
+Dialogue: 0,0:05:24.96,0:05:33.08,Caption-23,,0000,0000,0000,,{\pos(857.6,496.8)}{\an7}*Effectiveness will vary by person
+Dialogue: 0,0:05:25.13,0:05:26.71,Subtitle,,0000,0000,0000,,Your taste buds won't believe how
+Dialogue: 0,0:05:26.71,0:05:28.96,Subtitle,,0000,0000,0000,,mind-blowingly delicious these Huli jing riceballs are!
+Dialogue: 0,0:05:28.96,0:05:30.71,Subtitle,,0000,0000,0000,,Absolutely not available for purchase!
+Dialogue: 0,0:05:30.92,0:05:32.54,Subtitle,,0000,0000,0000,,It's chow time!
+Dialogue: 0,0:05:33.13,0:05:34.67,Subtitle,,0000,0000,0000,,Listen, Yuko.
+Dialogue: 0,0:05:34.67,0:05:38.13,Subtitle,,0000,0000,0000,,You gotta make sure that the flavors and colors\Nof your side dishes don't overlap.
+Dialogue: 0,0:05:38.29,0:05:40.96,Subtitle,,0000,0000,0000,,Separate 'em like: sweet, sour, and salty.
+Dialogue: 0,0:05:40.96,0:05:42.58,Subtitle,,0000,0000,0000,,Uh-huh. I got it.
+Dialogue: 0,0:05:43.96,0:05:50.42,Subtitle,,0000,0000,0000,,Then for colors: red, yellow, green, black, and white are\Nthe best ones to use to make something look really tasty.
+Dialogue: 0,0:05:45.08,0:05:52.38,Subtitle-4,,0000,0000,0000,,Rainbow cellophane! Marmalade sky! I am the egg man.
+Dialogue: 0,0:05:50.42,0:05:52.38,Subtitle,,0000,0000,0000,,C'mon, let's give it a try!
+Dialogue: 0,0:05:52.54,0:05:54.71,Subtitle,,0000,0000,0000,,You know how to make just about anything, huh, Lico?
+Dialogue: 0,0:05:54.79,0:05:57.13,Subtitle,,0000,0000,0000,,Well, I've spent a long time moseying\Nfrom one place to the next.
+Dialogue: 0,0:05:57.33,0:05:59.63,Subtitle,,0000,0000,0000,,So I learned how to make food from all over the world.
+Dialogue: 0,0:06:00.25,0:06:03.08,Subtitle,,0000,0000,0000,,Which is nice and all, but no matter where I seem to go...
+Dialogue: 0,0:06:03.75,0:06:07.21,Subtitle,,0000,0000,0000,,...for some cockamamie reason I always end up\Ngetting chased around and then forced to quit.
+Dialogue: 0,0:06:07.21,0:06:09.46,Subtitle,,0000,0000,0000,,Come now, Lico! The reason for that should be obvious!
+Dialogue: 0,0:06:09.46,0:06:12.71,Subtitle,,0000,0000,0000,,It's because you do crazy things like\Ngiving your employer psychedelic hallucinations!
+Dialogue: 0,0:06:12.88,0:06:17.50,Subtitle,,0000,0000,0000,,Aw. But I just wanted to show you something pretty,\Nsince I adore you so much, boss.
+Dialogue: 0,0:06:17.50,0:06:18.42,Subtitle,,0000,0000,0000,,You're forgiven.
+Dialogue: 0,0:06:18.42,0:06:19.46,Subtitle,,0000,0000,0000,,So he's okay with it...
+Dialogue: 0,0:06:19.63,0:06:23.54,Subtitle,,0000,0000,0000,,There were also a lot of times\Nwhen I had to quit after a priestess found me.
+Dialogue: 0,0:06:23.79,0:06:27.63,Subtitle,,0000,0000,0000,,I took an interest in cooking pretty much right after\NI became able to disguise myself as human.
+Dialogue: 0,0:06:27.63,0:06:37.96,Caption-24,,0000,0000,0000,,{\pos(102.4,108)}{\an7}Soy Sauce
+Dialogue: 0,0:06:27.88,0:06:33.63,Subtitle,,0000,0000,0000,,I snuck my way into a number of kitchens\Nand always cooked dishes with great love and care.
+Dialogue: 0,0:06:29.00,0:06:37.96,Caption-24,,0000,0000,0000,,{\pos(102.4,187.2)}{\an7}Mirin
+Dialogue: 0,0:06:30.50,0:06:37.96,Caption-24,,0000,0000,0000,,{\pos(102.4,244.8)}{\an7}Sake
+Dialogue: 0,0:06:32.00,0:06:37.96,Caption-24,,0000,0000,0000,,{\pos(102.4,309.6)}{\an7}Garlic
+Dialogue: 0,0:06:33.50,0:06:37.96,Caption-24,,0000,0000,0000,,{\pos(102.4,396)}{\an7}Ginger
+Dialogue: 0,0:06:33.88,0:06:38.29,Subtitle,,0000,0000,0000,,But back when I was a cub, I would put\Na teeny-weeny bit too many positive vibes in my food.
+Dialogue: 0,0:06:35.25,0:06:37.96,Caption-24,,0000,0000,0000,,{\pos(128,446.4)}{\an7}Salt
+Dialogue: 0,0:06:36.79,0:06:37.96,Caption-24,,0000,0000,0000,,{\pos(102.4,496.8)}{\an7}Pepper
+Dialogue: 0,0:06:38.04,0:06:43.96,Caption-25,,0000,0000,0000,,{\pos(576,388.8)}{\an7}CLOSED
+Dialogue: 0,0:06:38.04,0:06:39.04,Caption-26,,0000,0000,0000,,{\pos(947.2,115.2)}{\an7}Give us food!
+Dialogue: 0,0:06:38.33,0:06:43.96,Subtitle-2,,0000,0000,0000,,Give us food! Give us food! Give us food! Give us food!
+Dialogue: 0,0:06:38.42,0:06:39.38,Caption-27,,0000,0000,0000,,{\pos(396.8,180)}{\an7}Give us food!
+Dialogue: 0,0:06:38.63,0:06:42.08,Subtitle,,0000,0000,0000,,Which sorta caused a teeny-weeny problem\Nwith crowds banging at the doors.
+Dialogue: 0,0:06:39.04,0:06:39.88,Caption-28,,0000,0000,0000,,{\pos(320,100.8)}{\an7}Give us food!
+Dialogue: 0,0:06:39.50,0:06:40.46,Caption-29,,0000,0000,0000,,{\pos(1049.6,151.2)}{\an7}Give us food!
+Dialogue: 0,0:06:40.00,0:06:41.00,Caption-27,,0000,0000,0000,,{\pos(409.6,122.4)}{\an7}Give us food!
+Dialogue: 0,0:06:40.46,0:06:41.50,Caption-30,,0000,0000,0000,,{\pos(742.4,151.2)}{\an7}Give us food!
+Dialogue: 0,0:06:41.50,0:06:42.38,Caption-29,,0000,0000,0000,,{\pos(1049.6,151.2)}{\an7}Give us food!
+Dialogue: 0,0:06:42.00,0:06:42.96,Caption-28,,0000,0000,0000,,{\pos(345.6,86.4)}{\an7}Give us food!
+Dialogue: 0,0:06:42.13,0:06:43.96,Subtitle,,0000,0000,0000,,That sounds like more than a teeny-weeny problem!
+Dialogue: 0,0:06:42.38,0:06:43.25,Caption-27,,0000,0000,0000,,{\pos(435.2,151.2)}{\an7}Give us food!
+Dialogue: 0,0:06:43.25,0:06:43.96,Caption-29,,0000,0000,0000,,{\pos(1049.6,151.2)}{\an7}Give us food!
+Dialogue: 0,0:06:43.75,0:06:43.96,Caption-27,,0000,0000,0000,,{\pos(345.6,86.4)}{\an7}Give us food!
+Dialogue: 0,0:06:43.96,0:06:49.96,Subtitle,,0000,0000,0000,,So, I kept having to move around after the local priestess\Ncaught on to me and eventually ended up here.
+Dialogue: 0,0:06:50.46,0:06:51.83,Subtitle,,0000,0000,0000,,Sounds like an ordeal.
+Dialogue: 0,0:06:52.29,0:06:54.21,Subtitle,,0000,0000,0000,,Now I know better.
+Dialogue: 0,0:06:54.21,0:06:58.33,Subtitle,,0000,0000,0000,,The best kind of smile that my food can put\Non a customer's face is a completely natural one.
+Dialogue: 0,0:06:58.63,0:07:02.33,Subtitle,,0000,0000,0000,,Being able to cook in this city\Nwithout any fuss is like a dream come true.
+Dialogue: 0,0:07:02.63,0:07:06.25,Subtitle,,0000,0000,0000,,And it's all thanks to Lady Sakura\Nand the bossman here for taking me in.
+Dialogue: 0,0:07:06.38,0:07:07.38,Subtitle,,0000,0000,0000,,Aw, Lico...
+Dialogue: 0,0:07:07.71,0:07:13.04,Subtitle,,0000,0000,0000,,I get to eat three meals and nap on the job, plus I don't\Nhave to come out of my den when I don't feel like it,
+Dialogue: 0,0:07:13.33,0:07:15.88,Subtitle,,0000,0000,0000,,and lately I haven't had to interact\Nwith the customers at all.
+Dialogue: 0,0:07:16.25,0:07:17.21,Subtitle,,0000,0000,0000,,It's Heaven.
+Dialogue: 0,0:07:17.33,0:07:18.25,Subtitle,,0000,0000,0000,,Uh, Lico?
+Dialogue: 0,0:07:18.25,0:07:22.42,Caption-31,,0000,0000,0000,,{\pos(499.2,504)}{\an7}Marinate for 20 Minutes
+Dialogue: 0,0:07:18.46,0:07:22.42,Subtitle,,0000,0000,0000,,Anyhoo, it seems like most priestesses\Ndon't care two hoots about us these days.
+Dialogue: 0,0:07:22.58,0:07:24.54,Subtitle,,0000,0000,0000,,But you should still be careful out there, hun.
+Dialogue: 0,0:07:26.29,0:07:30.25,Subtitle,,0000,0000,0000,,You know, not every Magical Girl out there\Nis the easy-going type like I am!
+Dialogue: 0,0:07:36.88,0:07:38.13,Subtitle,,0000,0000,0000,,I want you to protect them and yourself.
+Dialogue: 0,0:07:39.00,0:07:41.00,Subtitle,,0000,0000,0000,,What even are Magical Girls, anyway?
+Dialogue: 0,0:07:41.54,0:07:44.04,Subtitle,,0000,0000,0000,,Who asked them to fight in the first place?
+Dialogue: 0,0:07:44.04,0:07:47.21,Subtitle,,0000,0000,0000,,Do they get some kind of reward for defeating demons?
+Dialogue: 0,0:07:47.21,0:07:52.38,Subtitle,,0000,0000,0000,,Magical Girls are ordinary humans who fight after\Nthey forge a pact with beings from the Light Clan.
+Dialogue: 0,0:07:52.71,0:07:53.58,Subtitle,,0000,0000,0000,,Or so I hear.
+Dialogue: 0,0:07:53.71,0:07:54.83,Subtitle,,0000,0000,0000,,The time hath come!
+Dialogue: 0,0:07:53.71,0:08:01.00,Caption-32,,0000,0000,0000,,{\pos(460.8,504)}{\an7}FAMILIARS OF THE LIGHT CLAN
+Dialogue: 0,0:07:54.88,0:07:57.79,Subtitle,,0000,0000,0000,,From what I understand, the girls who get contracted
+Dialogue: 0,0:07:56.46,0:07:57.38,Subtitle-5,,0000,0000,0000,,Wassup?!
+Dialogue: 0,0:07:57.79,0:08:01.00,Subtitle,,0000,0000,0000,,are chosen by familiars of the light clan that have\Npossessed animal bodies.
+Dialogue: 0,0:08:01.13,0:08:02.04,Subtitle,,0000,0000,0000,,Gulp...
+Dialogue: 0,0:08:01.13,0:08:01.92,Caption-33,,0000,0000,0000,,{\pos(217.6,432)}{\an7}Gulp...
+Dialogue: 0,0:08:02.79,0:08:04.50,Subtitle,,0000,0000,0000,,And who exactly is the "Light Clan"?
+Dialogue: 0,0:08:04.79,0:08:06.17,Subtitle-6,,0000,0000,0000,,I have no idea.\N{\rSubtitle}I got no clue.{\r}
+Dialogue: 0,0:08:08.17,0:08:12.42,Subtitle,,0000,0000,0000,,We haven't had much of an opportunity for peaceful talks\Nwith anybody from the magical girl side, you know.
+Dialogue: 0,0:08:12.42,0:08:15.38,Subtitle,,0000,0000,0000,,You should ask Lady Momo if you want to learn more.
+Dialogue: 0,0:08:15.38,0:08:21.79,Caption-34,,0000,0000,0000,,{\pos(1062.4,230.4)}{\an7}HAMMER
+Dialogue: 0,0:08:16.00,0:08:21.42,Subtitle,,0000,0000,0000,,But in terms of a reward, I know that whenever a magical\Ngirl succeeds in weakening and incapacitating us,
+Dialogue: 0,0:08:21.42,0:08:25.00,Subtitle,,0000,0000,0000,,they receive some sort of\N"vanquishment token" from their familiar.
+Dialogue: 0,0:08:25.17,0:08:28.46,Subtitle,,0000,0000,0000,,And it seems they are rewarded\Nafter collecting a number of those.
+Dialogue: 0,0:08:28.46,0:08:29.50,Subtitle,,0000,0000,0000,,A token...
+Dialogue: 0,0:08:29.88,0:08:33.75,Subtitle,,0000,0000,0000,,The more of those tokens that they collect,\Nthe grander the wish they can have granted.
+Dialogue: 0,0:08:34.92,0:08:38.38,Subtitle,,0000,0000,0000,,They get a wish granted?!\NThat sounds like a really good deal!
+Dialogue: 0,0:08:38.38,0:08:42.04,Subtitle,,0000,0000,0000,,You said it. In a matter of speaking,\Nwe're like a walking jackpot to them.
+Dialogue: 0,0:08:42.88,0:08:45.50,Subtitle,,0000,0000,0000,,But the majority of magical girls these days are friendly.
+Dialogue: 0,0:08:45.50,0:08:48.67,Subtitle,,0000,0000,0000,,You'll be fine as long as you avoid doing anything\Nto disrupt the peace in the neighborhood.
+Dialogue: 0,0:08:49.17,0:08:50.04,Subtitle,,0000,0000,0000,,Hopefully.
+Dialogue: 0,0:08:50.67,0:08:55.83,Subtitle,,0000,0000,0000,,Despite how much they'd gain from defeating me,\NMomo and Mikan have been protecting me instead...
+Dialogue: 0,0:08:55.83,0:08:57.29,Caption-35,,0000,0000,0000,,{\pos(550.4,496.8)}{\an7}VICIOUS MIKAN
+Dialogue: 0,0:08:57.71,0:09:00.00,Subtitle,,0000,0000,0000,,Nothing in my wardrobe is suitable for a picnic...
+Dialogue: 0,0:09:00.00,0:09:02.08,Subtitle,,0000,0000,0000,,But I feel pretty weird wearing yours.\N{\rSubtitle-3}Momowampus...{\r}
+Dialogue: 0,0:09:00.00,0:09:01.96,Caption-36,,0000,0000,0000,,{\pos(652.8,273.6)}{\an7}Momowampus...
+Dialogue: 0,0:09:02.33,0:09:06.50,Subtitle,,0000,0000,0000,,Given your physique, I think you'd be better off\Nwearing a simple, black t-shirt or something.
+Dialogue: 0,0:09:08.38,0:09:11.88,Subtitle,,0000,0000,0000,,O-oh my gosh, I'm gonna have to make\Nan ultra yummy lunch to try and return the favor!
+Dialogue: 0,0:09:11.88,0:09:14.33,Subtitle,,0000,0000,0000,,It has to be something to put a smile on their faces!
+Dialogue: 0,0:09:14.33,0:09:15.96,Subtitle,,0000,0000,0000,,That's the spirit!
+Dialogue: 0,0:09:16.42,0:09:20.04,Subtitle,,0000,0000,0000,,Use this mushroom that'll make it\Nso they can't stop laughing!
+Dialogue: 0,0:09:20.04,0:09:21.46,Subtitle,,0000,0000,0000,,No way, José!
+Dialogue: 0,0:09:23.79,0:09:26.75,Subtitle,,0000,0000,0000,,The meat's all seasoned, so let's get to cookin'.
+Dialogue: 0,0:09:27.25,0:09:31.29,Subtitle,,0000,0000,0000,,We've only got one wok that's prepped for use right now,\Nso I'll show you how it's done.
+Dialogue: 0,0:09:31.29,0:09:34.58,Subtitle,,0000,0000,0000,,Oh, that's not a problem. I think I can make another wok!
+Dialogue: 0,0:09:35.04,0:09:35.83,Subtitle,,0000,0000,0000,,Say what?
+Dialogue: 0,0:09:35.96,0:09:38.29,Subtitle,,0000,0000,0000,,Well, there's this rod that I inherited from my father.
+Dialogue: 0,0:09:38.83,0:09:40.83,Subtitle,,0000,0000,0000,,And I can transform it into pretty much anything!
+Dialogue: 0,0:09:41.04,0:09:45.63,Subtitle,,0000,0000,0000,,This is a perfectly seasoned and refined wok...\NIt's got a film of oil covering the whole thing.
+Dialogue: 0,0:09:45.79,0:09:50.00,Subtitle,,0000,0000,0000,,What on Earth? Nothing should be able to transform like\Nthat without totally disregarding the laws of nature!
+Dialogue: 0,0:09:50.17,0:09:52.63,Subtitle,,0000,0000,0000,,I don't really get how it works, but it sure is convenient.
+Dialogue: 0,0:09:52.63,0:09:55.50,Subtitle,,0000,0000,0000,,That seems like a huge understatement\Nconsidering what it can do!
+Dialogue: 0,0:09:55.50,0:09:57.75,Subtitle,,0000,0000,0000,,It's a lifesaver whenever I forget to bring a pen!
+Dialogue: 0,0:09:58.13,0:10:00.71,Subtitle,,0000,0000,0000,,So, it can just transform without any restrictions?
+Dialogue: 0,0:10:00.71,0:10:04.38,Subtitle,,0000,0000,0000,,As long as it's something I can imagine\Nas being stick-like in my head,
+Dialogue: 0,0:10:04.38,0:10:06.33,Subtitle,,0000,0000,0000,,then it can become pretty much whatever I want.
+Dialogue: 0,0:10:06.71,0:10:08.04,Subtitle,,0000,0000,0000,,Will you let me have it?
+Dialogue: 0,0:10:08.04,0:10:09.50,Subtitle,,0000,0000,0000,,Uh, I don't think so...
+Dialogue: 0,0:10:09.50,0:10:12.17,Subtitle,,0000,0000,0000,,Lico, dear, you really need to fix\Nthose bad habits of yours.
+Dialogue: 0,0:10:12.54,0:10:14.38,Subtitle,,0000,0000,0000,,You can dive into people's dreams, right?
+Dialogue: 0,0:10:14.58,0:10:16.58,Subtitle,,0000,0000,0000,,Pretty much anybody who's asleep, yeah.
+Dialogue: 0,0:10:16.58,0:10:21.29,Subtitle,,0000,0000,0000,,I hope you don't feel your talents are wasted working\Nin this podunk café. You're not going to quit on us, right?!
+Dialogue: 0,0:10:21.29,0:10:23.79,Subtitle,,0000,0000,0000,,Uh, yeah. I'd very much like to keep working here.
+Dialogue: 0,0:10:25.46,0:10:27.08,Subtitle,,0000,0000,0000,,You know, there is a good possibility...
+Dialogue: 0,0:10:27.92,0:10:31.63,Subtitle,,0000,0000,0000,,...that you could save a lot of people\Nif you put your mind to it.
+Dialogue: 0,0:10:31.63,0:10:32.33,Subtitle,,0000,0000,0000,,Huh?
+Dialogue: 0,0:10:32.33,0:10:36.29,Subtitle,,0000,0000,0000,,However, for her to have so much raw potential\Nat such a young age
+Dialogue: 0,0:10:36.46,0:10:42.13,Subtitle,,0000,0000,0000,,means that her powers could mature considerably\Nin either a good way or a bad way as she gets older.
+Dialogue: 0,0:10:42.58,0:10:46.29,Subtitle,,0000,0000,0000,,I just hope that no callous magical girls\Nset their sights on her.
+Dialogue: 0,0:10:45.42,0:10:46.29,Subtitle-5,,0000,0000,0000,,Focus, hun.
+Dialogue: 0,0:10:47.25,0:10:49.29,Subtitle,,0000,0000,0000,,The fried chicken was burnt black in an instant!
+Dialogue: 0,0:10:49.29,0:10:51.71,Subtitle,,0000,0000,0000,,It's because you let the oil get too hot.
+Dialogue: 0,0:10:51.71,0:10:55.42,Subtitle,,0000,0000,0000,,I guess even your almighty rod\Nstill needs temperature control.
+Dialogue: 0,0:10:55.54,0:10:58.75,Subtitle,,0000,0000,0000,,I'm sure the potential is there, but... yeah.
+Dialogue: 0,0:10:59.21,0:11:06.13,Caption-37,,0000,0000,0000,,{\pos(972.8,108)}{\an7}YOU CAN CALL
+Dialogue: 0,0:10:59.21,0:11:06.13,Caption-38,,0000,0000,0000,,{\pos(972.8,158.4)}{\an7}YOURSELF A PRO!
+Dialogue: 0,0:10:59.21,0:11:06.13,Caption-39,,0000,0000,0000,,{\pos(422.4,496.8)}{\an7}WOK PRE-SEASONED WITH OIL
+Dialogue: 0,0:10:59.79,0:11:03.75,Subtitle,,0000,0000,0000,,The oil film that coats this pan has been carefully\Nproduced to mimic those belonging to master chefs!
+Dialogue: 0,0:11:03.92,0:11:06.00,Subtitle,,0000,0000,0000,,Enjoy the pleasure of being a pro in your very own home!
+Dialogue: 0,0:11:06.13,0:11:06.54,Caption-11,,0000,0000,0000,,{\pos(908.8,396)}{\an7}SIMPLE
+Dialogue: 0,0:11:06.13,0:11:06.54,Caption-11,,0000,0000,0000,,{\pos(870.4,446.4)}{\an7}BLACK T-SHIRT
+Dialogue: 0,0:11:06.50,0:11:10.33,Subtitle,,0000,0000,0000,,Mikan gave me all that advice about clothes, but...\NI honestly don't get it.
+Dialogue: 0,0:11:07.50,0:11:12.63,Caption-11,,0000,0000,0000,,{\pos(908.8,396)}{\an7}SIMPLE                 SIMPLE
+Dialogue: 0,0:11:07.50,0:11:12.63,Caption-11,,0000,0000,0000,,{\pos(857.6,446.4)}{\an7} BLACK T-SHIRT      WHITE T-SHIRT
+Dialogue: 0,0:11:10.50,0:11:12.63,Subtitle,,0000,0000,0000,,What does she mean by "a simple black t-shirt"?
+Dialogue: 0,0:11:14.33,0:11:15.96,Caption,,0000,0000,0000,,{\pos(844.8,388.8)}{\an7}SIMPLE BLACK T-SHIRT
+Dialogue: 0,0:11:15.96,0:11:24.17,Caption,,0000,0000,0000,,{\pos(499.2,439.2)}{\an7}SIMPLE BLACK T-SHIRT
+Dialogue: 0,0:11:16.13,0:11:17.17,Subtitle,,0000,0000,0000,,Heck yeah!
+Dialogue: 0,0:11:17.17,0:11:19.42,Subtitle,,0000,0000,0000,,Excuse me! Can I get this in an L size?
+Dialogue: 0,0:11:19.63,0:11:24.17,Subtitle,,0000,0000,0000,,Don't give up, Magical Girl! Get through the summer\Nwith a simple and coordinated wardrobe.
+Dialogue: 0,0:11:24.17,0:11:26.46,Subtitle,,0000,0000,0000,,Very simple!
+Dialogue: 0,0:11:24.17,0:11:26.54,Caption,,0000,0000,0000,,{\pos(524.8,172.8)}{\an7}SIMPLE BLACK T-SHIRT
+Dialogue: 0,0:11:26.54,0:11:28.96,Subtitle,,0000,0000,0000,,My sample side dishes are finished!
+Dialogue: 0,0:11:28.96,0:11:30.17,Subtitle,,0000,0000,0000,,Good on ya!
+Dialogue: 0,0:11:30.46,0:11:33.92,Subtitle,,0000,0000,0000,,I know! Why don't you use the lacquer lunch\Nboxes we have in the shop?
+Dialogue: 0,0:11:33.92,0:11:37.75,Subtitle,,0000,0000,0000,,You went through so much to cook that lunch,\Nyou might as well make it look extra pretty!
+Dialogue: 0,0:11:37.75,0:11:39.42,Subtitle,,0000,0000,0000,,Wow, thank you!
+Dialogue: 0,0:11:39.42,0:11:43.58,Subtitle,,0000,0000,0000,,Except there's one little problem.\NThis box was made to fit enough food for 4 or 5 people.
+Dialogue: 0,0:11:43.88,0:11:48.29,Subtitle,,0000,0000,0000,,This picnic is just for you and 2 magical girls, right?\NYou're gonna end up with some leftovers.
+Dialogue: 0,0:11:46.83,0:11:47.79,Caption-40,,0000,0000,0000,,{\pos(563.2,259.2)}{\an7}UHHHHH...
+Dialogue: 0,0:11:49.63,0:11:50.71,Subtitle,,0000,0000,0000,,Here's an idea!
+Dialogue: 0,0:11:51.33,0:11:53.29,Caption-41,,0000,0000,0000,,{\pos(230.4,144)}{\an7}THE NEXT DAY
+Dialogue: 0,0:11:51.33,0:11:53.29,Caption-42,,0000,0000,0000,,{\pos(704,576)}{\an7}THE PARK WHERE YOU CAN FIND LOTS OF CATS
+Dialogue: 0,0:11:55.25,0:11:57.13,Subtitle,,0000,0000,0000,,There are so many cats here!
+Dialogue: 0,0:11:57.75,0:12:00.04,Subtitle,,0000,0000,0000,,Yeah, this is the park where you can find lots of cats.
+Dialogue: 0,0:12:00.29,0:12:02.54,Subtitle,,0000,0000,0000,,So, you settled on wearing that outfit, huh?
+Dialogue: 0,0:12:02.67,0:12:06.67,Subtitle,,0000,0000,0000,,There was a black t-shirt that seemed perfect for me.\NBut they didn't have it in my size.
+Dialogue: 0,0:12:07.08,0:12:09.50,Subtitle,,0000,0000,0000,,Thanks for letting me borrow these.
+Dialogue: 0,0:12:09.71,0:12:12.50,Subtitle,,0000,0000,0000,,You're welcome! But c'mon, why so grumpy?
+Dialogue: 0,0:12:12.83,0:12:16.83,Subtitle,,0000,0000,0000,,I don't mean to sound ungrateful,\Nbut I just don't think this is a good look for me.
+Dialogue: 0,0:12:16.83,0:12:19.63,Subtitle,,0000,0000,0000,,Momo! Mikan! Good morning!
+Dialogue: 0,0:12:19.63,0:12:20.38,Subtitle,,0000,0000,0000,,Shamiko!
+Dialogue: 0,0:12:20.38,0:12:22.46,Subtitle,,0000,0000,0000,,Hey, Momo! Nice to see you!
+Dialogue: 0,0:12:22.63,0:12:24.67,Subtitle,,0000,0000,0000,,Uh, yeah, hello there...
+Dialogue: 0,0:12:24.67,0:12:25.29,Subtitle,,0000,0000,0000,,What?
+Dialogue: 0,0:12:25.29,0:12:26.50,Subtitle,,0000,0000,0000,,You're heavy!
+Dialogue: 0,0:12:25.46,0:12:27.00,Caption-43,,0000,0000,0000,,{\pos(550.4,482.4)}{\an7}You're heavy!
+Dialogue: 0,0:12:27.00,0:12:28.13,Subtitle,,0000,0000,0000,,I am so sorry.
+Dialogue: 0,0:12:28.38,0:12:30.67,Subtitle,,0000,0000,0000,,I was utterly powerless to stop Lico.
+Dialogue: 0,0:12:30.67,0:12:35.17,Subtitle,,0000,0000,0000,,I've never been to a zoo before!\NLet's all have a good time!
+Dialogue: 0,0:12:35.38,0:12:36.21,Subtitle,,0000,0000,0000,,Oh wow!
+Dialogue: 0,0:12:36.42,0:12:39.42,Subtitle,,0000,0000,0000,,You're looking cuter than a button today, hun!
+Dialogue: 0,0:12:39.58,0:12:41.42,Subtitle,,0000,0000,0000,,Why? What's the occasion?
+Dialogue: 0,0:12:41.42,0:12:43.38,Subtitle,,0000,0000,0000,,Uh, right. But I'm going to get changed now.
+Dialogue: 0,0:12:44.25,0:12:48.42,Subtitle,,0000,0000,0000,,Don't give up, Shamiko!\NThe day for your get-together at the zoo has come!
+Dialogue: 0,0:13:01.13,0:13:04.46,Caption-44,,0000,0000,0000,,{\pos(473.6,100.8)}{\an7}Tama Zoological Park
+Dialogue: 0,0:13:01.38,0:13:04.25,Subtitle,,0000,0000,0000,,Tama Zoological Park!
+Dialogue: 0,0:13:05.21,0:13:07.54,Subtitle,,0000,0000,0000,,Now it's time for an exciting trip to the zoo!
+Dialogue: 0,0:13:07.54,0:13:09.88,Subtitle,,0000,0000,0000,,Let's have a blast today, you guys!
+Dialogue: 0,0:13:10.21,0:13:12.92,Subtitle,,0000,0000,0000,,All of us? Are you sure it's okay that we tag along?
+Dialogue: 0,0:13:10.21,0:13:16.33,Caption-45,,0000,0000,0000,,{\pos(473.6,489.6)}{\an7}Ticket
+Dialogue: 0,0:13:13.04,0:13:16.29,Subtitle,,0000,0000,0000,,Of course! It says up to 5 people\Ncan get in with this ticket.
+Dialogue: 0,0:13:16.33,0:13:23.21,Caption-46,,0000,0000,0000,,{\pos(576,93.6)}{\an7}SHUDDER
+Dialogue: 0,0:13:16.33,0:13:23.21,Caption-46,,0000,0000,0000,,{\pos(844.8,144)}{\an7}SHUDDER
+Dialogue: 0,0:13:16.34,0:13:23.21,Caption-46,,0000,0000,0000,,{\pos(1062.4,288)}{\an7}SHUDDER
+Dialogue: 0,0:13:16.34,0:13:23.21,Caption-46,,0000,0000,0000,,{\pos(435.2,367.2)}{\an7}SHUDDER
+Dialogue: 0,0:13:16.42,0:13:19.46,Subtitle,,0000,0000,0000,,It's not the number of us that I'm worried about, Yuko!
+Dialogue: 0,0:13:19.54,0:13:23.21,Subtitle,,0000,0000,0000,,Let's just say... it feels like an immense pressure\Nfrom nearby is about to squish me flat!
+Dialogue: 0,0:13:23.21,0:13:24.88,Subtitle,,0000,0000,0000,,What did you come for?
+Dialogue: 0,0:13:25.04,0:13:28.33,Subtitle,,0000,0000,0000,,Today was supposed to be a fun day at the zoo.
+Dialogue: 0,0:13:28.46,0:13:32.67,Subtitle,,0000,0000,0000,,If you must know, we came here to help you\Nout of the goodness of our hearts.
+Dialogue: 0,0:13:32.67,0:13:35.92,Subtitle,,0000,0000,0000,,Shucks, Momo. It hurts to see you\Nget so steamed up about this.
+Dialogue: 0,0:13:36.21,0:13:38.58,Subtitle,,0000,0000,0000,,You even ditched that cute outfit you were wearing.
+Dialogue: 0,0:13:38.58,0:13:44.21,Caption-47,,0000,0000,0000,,{\pos(576,316.8)}{\an7}THE DAM IN MOMO'S HEART
+Dialogue: 0,0:13:38.83,0:13:39.92,Subtitle,,0000,0000,0000,,Cut to the chase.
+Dialogue: 0,0:13:39.96,0:13:44.21,Caption-48,,0000,0000,0000,,{\pos(588.8,453.6)}{\an7}Translation: Please explain yourself quickly
+Dialogue: 0,0:13:39.96,0:13:44.21,Caption-48,,0000,0000,0000,,{\pos(537.6,504)}{\an7}before the dam in my heart gets full enough to burst.
+Dialogue: 0,0:13:40.04,0:13:44.13,Subtitle,,0000,0000,0000,,Please explain yourself quickly\Nbefore the dam in my heart gets full enough to burst.
+Dialogue: 0,0:13:44.21,0:13:48.83,Subtitle,,0000,0000,0000,,Well, we heard that you like animals!\NAnd guess what? We're cute animals, too!
+Dialogue: 0,0:13:48.83,0:13:51.96,Subtitle,,0000,0000,0000,,So, we figured that tagging along with you\Nwould make today even more fun!
+Dialogue: 0,0:13:52.04,0:13:53.71,Caption-49,,0000,0000,0000,,{\pos(345.6,482.4)}{\an7}AIN'T I
+Dialogue: 0,0:13:52.13,0:13:53.58,Subtitle,,0000,0000,0000,,Ain't I generous?
+Dialogue: 0,0:13:52.50,0:13:53.71,Caption-49,,0000,0000,0000,,{\pos(883.2,482.4)}{\an7}GENEROUS?
+Dialogue: 0,0:13:53.71,0:13:54.75,Subtitle,,0000,0000,0000,,How about that.
+Dialogue: 0,0:13:54.58,0:13:58.17,Caption-50,,0000,0000,0000,,{\pos(576,424.8)}{\an7}Translation: I get the feeling I won't be able to make
+Dialogue: 0,0:13:54.58,0:13:58.17,Caption-50,,0000,0000,0000,,{\pos(576,475.2)}{\an7}any sense of this, so I'm going to quit asking.
+Dialogue: 0,0:13:54.75,0:13:57.38,Subtitle,,0000,0000,0000,,I get the feeling I won't be able to make\Nany sense of this, so I'm going to quit asking.
+Dialogue: 0,0:13:58.29,0:13:59.50,Subtitle,,0000,0000,0000,,Don't be silly, Lico.
+Dialogue: 0,0:13:59.50,0:14:02.88,Subtitle,,0000,0000,0000,,You know that we came here for something\Nfar more important. The magical girl here needs...
+Dialogue: 0,0:14:02.88,0:14:04.08,Subtitle,,0000,0000,0000,,Yargh!
+Dialogue: 0,0:14:04.08,0:14:05.38,Subtitle,,0000,0000,0000,,Boss!
+Dialogue: 0,0:14:05.38,0:14:07.58,Subtitle,,0000,0000,0000,,My back is still on the mend...
+Dialogue: 0,0:14:07.71,0:14:08.71,Caption-51,,0000,0000,0000,,{\pos(742.4,122.4)}{\an7}Ahaha!
+Dialogue: 0,0:14:08.71,0:14:13.42,Subtitle,,0000,0000,0000,,My apologies for being so fragile.\NJust leave me behind and go enjoy the zoo...
+Dialogue: 0,0:14:13.42,0:14:14.58,Subtitle,,0000,0000,0000,,Sounds good.
+Dialogue: 0,0:14:15.08,0:14:17.58,Subtitle,,0000,0000,0000,,We'll just have Lico take you back home right now.
+Dialogue: 0,0:14:17.58,0:14:18.96,Subtitle,,0000,0000,0000,,We can't do that!
+Dialogue: 0,0:14:18.96,0:14:20.46,Subtitle,,0000,0000,0000,,Let me carry your bags!
+Dialogue: 0,0:14:20.46,0:14:21.88,Subtitle,,0000,0000,0000,,Huh? You're letting them stay?
+Dialogue: 0,0:14:21.88,0:14:23.46,Subtitle,,0000,0000,0000,,This is supposed to be a group outing!
+Dialogue: 0,0:14:23.46,0:14:25.71,Subtitle,,0000,0000,0000,,Pain, pain, go away!
+Dialogue: 0,0:14:25.71,0:14:26.88,Caption-52,,0000,0000,0000,,{\pos(614.4,410.4)}{\an7}PAIN
+Dialogue: 0,0:14:25.79,0:14:28.42,Subtitle,,0000,0000,0000,,Whoa! Something did fly away!
+Dialogue: 0,0:14:28.42,0:14:29.92,Subtitle,,0000,0000,0000,,Are you all right?\N{\rSubtitle-3}Chill~ Chill~{\r}
+Dialogue: 0,0:14:28.42,0:14:29.96,Caption-53,,0000,0000,0000,,{\pos(729.6,136.8)}{\an7}Chill~
+Dialogue: 0,0:14:28.42,0:14:29.96,Caption-53,,0000,0000,0000,,{\pos(307.2,201.6)}{\an7}Chill~
+Dialogue: 0,0:14:30.04,0:14:33.63,Subtitle,,0000,0000,0000,,I'm feeling better.\NThe cooling pad is working, so thank you.
+Dialogue: 0,0:14:33.63,0:14:41.46,Caption-48,,0000,0000,0000,,{\pos(102.4,50.4)}{\an7}Benefits to Being a Bipedal Creature
+Dialogue: 0,0:14:33.63,0:14:41.46,Caption-48,,0000,0000,0000,,{\pos(243.2,100.8)}{\an7}-Can hold tools
+Dialogue: 0,0:14:33.63,0:14:41.46,Caption-48,,0000,0000,0000,,{\pos(243.2,151.2)}{\an7}-Can support a large brain
+Dialogue: 0,0:14:34.13,0:14:37.04,Subtitle,,0000,0000,0000,,My species is actually quadrupedal by nature, you see.
+Dialogue: 0,0:14:37.04,0:14:41.46,Subtitle,,0000,0000,0000,,So I often suffer from back pain\Nbecause I force myself to stand on two legs instead.
+Dialogue: 0,0:14:41.46,0:14:43.29,Subtitle,,0000,0000,0000,,Oh no, that's awful!
+Dialogue: 0,0:14:43.29,0:14:46.38,Subtitle,,0000,0000,0000,,It's a living hell. But, that being said...
+Dialogue: 0,0:14:46.83,0:14:50.79,Subtitle,,0000,0000,0000,,I have no other choice but to walk on two legs\Nif I want to keep a low profile when living among humans.
+Dialogue: 0,0:14:50.79,0:14:54.75,Subtitle,,0000,0000,0000,,I imagine that a tapir walking on two legs would actually\Ndraw a ridiculous amount of attention to itself,
+Dialogue: 0,0:14:54.75,0:14:56.42,Subtitle,,0000,0000,0000,,but let's not sweat the small stuff.
+Dialogue: 0,0:14:56.46,0:14:57.33,Caption-54,,0000,0000,0000,,{\pos(972.8,302.4)}{\an7}That's rough
+Dialogue: 0,0:14:56.58,0:14:57.54,Subtitle,,0000,0000,0000,,That's rough.
+Dialogue: 0,0:14:57.92,0:15:00.08,Subtitle,,0000,0000,0000,,I'm glad you made it back on your feet.
+Dialogue: 0,0:15:00.29,0:15:02.13,Subtitle,,0000,0000,0000,,Thank you. Sorry for the trouble.
+Dialogue: 0,0:15:04.29,0:15:05.08,Subtitle,,0000,0000,0000,,Momo!
+Dialogue: 0,0:15:06.38,0:15:09.67,Subtitle,,0000,0000,0000,,Are you sure you didn't just want to do this\Nalone with Shamiko?
+Dialogue: 0,0:15:09.67,0:15:10.42,Subtitle,,0000,0000,0000,,Huh?
+Dialogue: 0,0:15:10.58,0:15:14.38,Subtitle,,0000,0000,0000,,No! I think going with a big group\Nis the best way to enjoy the zoo!
+Dialogue: 0,0:15:15.13,0:15:18.17,Subtitle,,0000,0000,0000,,But the problem is I basically assaulted\Ntheir café the first time we met,
+Dialogue: 0,0:15:18.17,0:15:21.13,Subtitle,,0000,0000,0000,,and I get the impression that Lico\Ndoesn't enjoy my company very much.
+Dialogue: 0,0:15:21.75,0:15:27.17,Subtitle,,0000,0000,0000,,That couldn't be further from the truth, hun!\NYou're a little cutie-patootie in my eyes!
+Dialogue: 0,0:15:27.17,0:15:27.75,Subtitle,,0000,0000,0000,,Huh?
+Dialogue: 0,0:15:28.13,0:15:29.50,Subtitle,,0000,0000,0000,,She's got an acute sense of hearing!
+Dialogue: 0,0:15:30.13,0:15:32.33,Subtitle,,0000,0000,0000,,Several times stronger than any human!
+Dialogue: 0,0:15:32.50,0:15:40.38,Caption-55,,0000,0000,0000,,{\pos(256,136.8)}{\an7}THE MOUSE HOUSE
+Dialogue: 0,0:15:32.71,0:15:34.42,Subtitle,,0000,0000,0000,,Anyhoo, let's go enjoy ourselves!
+Dialogue: 0,0:15:34.58,0:15:39.42,Subtitle,,0000,0000,0000,,We brought a really big lunch, so everybody's\Ngotta get in some steps to empty their bellies!
+Dialogue: 0,0:15:39.42,0:15:40.33,Subtitle,,0000,0000,0000,,Okay!
+Dialogue: 0,0:15:40.46,0:15:44.08,Subtitle,,0000,0000,0000,,Did you know that baby Malayan tapirs\Nhave a very intricate camouflage on their fur?
+Dialogue: 0,0:15:44.08,0:15:46.88,Subtitle,,0000,0000,0000,,Wow, you're right!\NThey look totally different from the adults!
+Dialogue: 0,0:15:48.96,0:15:50.88,Subtitle,,0000,0000,0000,,So, are the itty-bitty animals your favorite?
+Dialogue: 0,0:15:50.88,0:15:51.83,Subtitle,,0000,0000,0000,,I guess.
+Dialogue: 0,0:15:51.83,0:15:53.33,Subtitle,,0000,0000,0000,,Same here!
+Dialogue: 0,0:15:53.88,0:15:57.21,Subtitle,,0000,0000,0000,,They cook real fast, which makes 'em good\Nboiled, baked, or even fried.
+Dialogue: 0,0:15:57.21,0:15:58.63,Subtitle,,0000,0000,0000,,I don't think we're on the same page here.
+Dialogue: 0,0:15:58.63,0:16:07.58,Subtitle-2,,0000,0000,0000,,Giraffe! Giraffe! Giraffe! Giraffe! Giraffe! Giraffe! Giraffe!
+Dialogue: 0,0:16:01.13,0:16:04.13,Subtitle,,0000,0000,0000,,You can tell that its summer vacation\Nfrom all the big crowds out today!
+Dialogue: 0,0:16:04.13,0:16:04.96,Subtitle,,0000,0000,0000,,Yeah.
+Dialogue: 0,0:16:05.29,0:16:07.08,Subtitle,,0000,0000,0000,,What's that group over there looking at?
+Dialogue: 0,0:16:07.08,0:16:07.58,Subtitle,,0000,0000,0000,,Huh?
+Dialogue: 0,0:16:08.13,0:16:09.17,Subtitle,,0000,0000,0000,,Boss?!
+Dialogue: 0,0:16:09.17,0:16:12.79,Subtitle,,0000,0000,0000,,Oh, I'm not part of the petting zoo area.\NBut you're still welcome to pet me.
+Dialogue: 0,0:16:12.79,0:16:14.46,Subtitle,,0000,0000,0000,,This tapir is so adorable!
+Dialogue: 0,0:16:14.46,0:16:17.58,Subtitle,,0000,0000,0000,,Wait. I think I remember this tapir from somewhere...
+Dialogue: 0,0:16:17.58,0:16:21.75,Subtitle,,0000,0000,0000,,Oh, you're a regular at the café.\NIt's me! The owner of Asura.
+Dialogue: 0,0:16:22.46,0:16:24.17,Subtitle,,0000,0000,0000,,I wanna pet it!
+Dialogue: 0,0:16:25.96,0:16:30.17,Caption-56,,0000,0000,0000,,{\pos(691.2,115.2)}{\an7}DOG
+Dialogue: 0,0:16:25.96,0:16:30.17,Caption-57,,0000,0000,0000,,{\pos(704,504)}{\an7}STAYING AT HOME FOR TODAY
+Dialogue: 0,0:16:27.08,0:16:30.17,Subtitle,,0000,0000,0000,,We'll go for a nice walk once I get back. Okay, boy?
+Dialogue: 0,0:16:30.38,0:16:32.83,Subtitle,,0000,0000,0000,,We offer pictures for 1,800 yen, folks!
+Dialogue: 0,0:16:30.83,0:16:32.83,Subtitle-5,,0000,0000,0000,,I wanna pet it!
+Dialogue: 0,0:16:32.83,0:16:35.17,Subtitle,,0000,0000,0000,,Stop, Lico! None of your greedy little schemes!
+Dialogue: 0,0:16:35.75,0:16:37.71,Subtitle,,0000,0000,0000,,We heard one of the tapirs escaped!
+Dialogue: 0,0:16:37.96,0:16:39.83,Subtitle,,0000,0000,0000,,Oh, I'm just a tapir visiting from abroad.
+Dialogue: 0,0:16:40.08,0:16:41.42,Subtitle,,0000,0000,0000,,A tapir visiting a zoo...
+Dialogue: 0,0:16:41.54,0:16:43.67,Subtitle,,0000,0000,0000,,Well, guess we don't have to catch a tapir\Nthat's from somewhere else.
+Dialogue: 0,0:16:43.67,0:16:46.13,Caption-58,,0000,0000,0000,,{\pos(371.2,115.2)}{\an7}THE OWNER OF CAFÉ ASURA: SHIROSAWA
+Dialogue: 0,0:16:44.00,0:16:45.96,Subtitle,,0000,0000,0000,,I'm a good guy tapir!
+Dialogue: 0,0:16:46.13,0:16:49.25,Subtitle,,0000,0000,0000,,I'm so sorry for budging in on your girls' day out...
+Dialogue: 0,0:16:49.25,0:16:50.33,Subtitle,,0000,0000,0000,,It's no problem.
+Dialogue: 0,0:16:50.63,0:16:51.79,Subtitle,,0000,0000,0000,,Oh, that reminds me.
+Dialogue: 0,0:16:51.96,0:16:54.96,Subtitle,,0000,0000,0000,,What was the important thing\Nyou were trying to explain earlier?
+Dialogue: 0,0:16:55.46,0:16:58.88,Subtitle,,0000,0000,0000,,Don't be silly, Lico. You know that we came here\Nfor something far more important.
+Dialogue: 0,0:16:58.88,0:17:01.50,Subtitle,,0000,0000,0000,,The magical girl here needs... yargh!
+Dialogue: 0,0:17:01.50,0:17:02.50,Subtitle,,0000,0000,0000,,Ah, of course.
+Dialogue: 0,0:17:02.50,0:17:05.58,Subtitle,,0000,0000,0000,,We animals have more sensory organs\Nthan you humans do,
+Dialogue: 0,0:17:05.58,0:17:09.13,Subtitle,,0000,0000,0000,,so sometimes we pick up\Non strange things that you can't.
+Dialogue: 0,0:17:09.13,0:17:11.75,Subtitle,,0000,0000,0000,,And for that reason, there's something\Nconcerning us about Lady Momo...
+Dialogue: 0,0:17:12.83,0:17:14.17,Subtitle,,0000,0000,0000,,What is it?
+Dialogue: 0,0:17:15.88,0:17:16.63,Subtitle,,0000,0000,0000,,Momo!
+Dialogue: 0,0:17:18.58,0:17:19.92,Subtitle,,0000,0000,0000,,I've been looking all over for you!
+Dialogue: 0,0:17:20.38,0:17:23.00,Subtitle,,0000,0000,0000,,Sorry. I got so distracted by the view here\Nthat I fell behind.
+Dialogue: 0,0:17:23.50,0:17:24.71,Subtitle,,0000,0000,0000,,Are the others waiting for us?
+Dialogue: 0,0:17:24.71,0:17:25.63,Subtitle,,0000,0000,0000,,Actually...
+Dialogue: 0,0:17:26.00,0:17:28.79,Subtitle,,0000,0000,0000,,Everybody ended up having to go home all of a sudden.
+Dialogue: 0,0:17:28.92,0:17:29.54,Subtitle,,0000,0000,0000,,Huh?
+Dialogue: 0,0:17:30.13,0:17:31.96,Subtitle,,0000,0000,0000,,I gotta go home and water my potted mikan plants.
+Dialogue: 0,0:17:31.96,0:17:34.92,Subtitle,,0000,0000,0000,,Uh oh! I think I left the heat on the tempura oil!
+Dialogue: 0,0:17:34.92,0:17:37.13,Subtitle,,0000,0000,0000,,Ugh! I'm having one of my chronic fits of drowsiness!
+Dialogue: 0,0:17:37.33,0:17:37.92,Subtitle,,0000,0000,0000,,So...
+Dialogue: 0,0:17:37.92,0:17:38.50,Subtitle,,0000,0000,0000,,What the heck?
+Dialogue: 0,0:17:38.88,0:17:41.46,Subtitle,,0000,0000,0000,,And after all the trouble\NI went through to make this big lunch!
+Dialogue: 0,0:17:41.75,0:17:43.54,Subtitle,,0000,0000,0000,,I hope they didn't leave for my sake...
+Dialogue: 0,0:17:43.71,0:17:46.58,Subtitle,,0000,0000,0000,,I'm sorry. Our fun little picnic\Nturned into such a huge mess.
+Dialogue: 0,0:17:46.58,0:17:50.75,Subtitle,,0000,0000,0000,,Oh, that's okay. To be honest,\NI was kind of enjoying all the craziness.
+Dialogue: 0,0:17:51.08,0:17:52.04,Subtitle,,0000,0000,0000,,I'm glad to hear that.
+Dialogue: 0,0:17:52.29,0:17:54.96,Subtitle,,0000,0000,0000,,This seems like a good time for a break. Let's eat!
+Dialogue: 0,0:17:55.71,0:17:56.38,Subtitle,,0000,0000,0000,,Okay.
+Dialogue: 0,0:17:57.00,0:17:59.25,Caption-59,,0000,0000,0000,,{\pos(499.2,129.6)}{\an7}SAKURA PLAZA
+Dialogue: 0,0:17:57.00,0:17:59.25,Caption-60,,0000,0000,0000,,{\pos(320,410.4)}{\an7}A GREAT PLACE FOR A PICNIC
+Dialogue: 0,0:18:00.83,0:18:04.46,Subtitle,,0000,0000,0000,,So, hey, I really want to get closer with you.\NI'm glad we made the time to hang out.
+Dialogue: 0,0:18:04.71,0:18:06.58,Subtitle,,0000,0000,0000,,Now we finally have a chance to just talk.
+Dialogue: 0,0:18:07.04,0:18:08.88,Subtitle,,0000,0000,0000,,So, why did you become a magical girl, Momo?
+Dialogue: 0,0:18:09.04,0:18:11.67,Caption-61,,0000,0000,0000,,{\pos(1088,381.6)}{\an7}PRESS
+Dialogue: 0,0:18:09.04,0:18:11.67,Caption-61,,0000,0000,0000,,{\pos(627.2,432)}{\an7}PRESS
+Dialogue: 0,0:18:09.29,0:18:14.92,Subtitle,,0000,0000,0000,,What do you want to be in the future?\NWhat's your weakness? Are there any foods you hate?!
+Dialogue: 0,0:18:11.67,0:18:13.67,Caption-61,,0000,0000,0000,,{\pos(576,338.4)}{\an7}PRESS
+Dialogue: 0,0:18:11.67,0:18:13.67,Caption-61,,0000,0000,0000,,{\pos(1075.2,482.4)}{\an7}PRESS
+Dialogue: 0,0:18:13.67,0:18:16.79,Caption-62,,0000,0000,0000,,{\pos(1049.6,324)}{\an7}PRESS
+Dialogue: 0,0:18:13.67,0:18:16.79,Caption-62,,0000,0000,0000,,{\pos(486.4,410.4)}{\an7}PRESS
+Dialogue: 0,0:18:15.04,0:18:16.79,Subtitle,,0000,0000,0000,,That's a pretty intense barrage of questions...
+Dialogue: 0,0:18:17.54,0:18:20.13,Subtitle,,0000,0000,0000,,You know... I really love this city!
+Dialogue: 0,0:18:20.46,0:18:23.83,Subtitle,,0000,0000,0000,,And since we're working together to protect it,\NI want to know all about you!
+Dialogue: 0,0:18:26.33,0:18:28.67,Subtitle,,0000,0000,0000,,I feel exactly the same.
+Dialogue: 0,0:18:28.88,0:18:29.46,Subtitle,,0000,0000,0000,,But...
+Dialogue: 0,0:18:29.21,0:18:29.92,Caption-63,,0000,0000,0000,,{\pos(652.8,295.2)}{\an7}GRIP
+Dialogue: 0,0:18:29.54,0:18:30.00,Subtitle,,0000,0000,0000,,Huh?
+Dialogue: 0,0:18:30.00,0:18:32.63,Subtitle,,0000,0000,0000,,Using dirty tricks like this... is a big no-no!
+Dialogue: 0,0:18:34.25,0:18:35.96,Subtitle,,0000,0000,0000,,Fresh Peach Outer Reap!
+Dialogue: 0,0:18:37.08,0:18:38.63,Subtitle,,0000,0000,0000,,Aw, phooey!
+Dialogue: 0,0:18:38.63,0:18:40.75,Subtitle,,0000,0000,0000,,Why couldn't you just play along?
+Dialogue: 0,0:18:40.75,0:18:43.13,Subtitle,,0000,0000,0000,,I knew you'd pull something like this, Lico!
+Dialogue: 0,0:18:43.33,0:18:46.83,Subtitle,,0000,0000,0000,,So, I take it that you were trying to trick me\Ninto eating these leaves, huh?
+Dialogue: 0,0:18:47.00,0:18:48.29,Subtitle,,0000,0000,0000,,How'd you figure it out?
+Dialogue: 0,0:18:48.42,0:18:54.25,Subtitle,,0000,0000,0000,,Your tone, gestures, level of eye contact, rhythm of\Nbreath, tail movement, excess core strength, and so on.
+Dialogue: 0,0:18:54.25,0:18:55.25,Subtitle,,0000,0000,0000,,All of it was way off!
+Dialogue: 0,0:18:55.38,0:18:57.21,Subtitle,,0000,0000,0000,,Whoa... you can't be for real...
+Dialogue: 0,0:18:57.46,0:18:58.46,Subtitle,,0000,0000,0000,,And most importantly...
+Dialogue: 0,0:18:58.92,0:19:01.83,Subtitle,,0000,0000,0000,,...there's no way Shamiko could ever be\Nthat straightforward with me.
+Dialogue: 0,0:19:01.83,0:19:05.33,Subtitle,,0000,0000,0000,,Now I get it. That's really good to know.
+Dialogue: 0,0:19:05.33,0:19:08.38,Subtitle,,0000,0000,0000,,Lico! Lady Momo! Where have you been?!
+Dialogue: 0,0:19:08.83,0:19:11.92,Subtitle,,0000,0000,0000,,I blew it, boss! The switcheroo was a big failure!
+Dialogue: 0,0:19:11.92,0:19:13.88,Subtitle,,0000,0000,0000,,GROVEEEEL!
+Dialogue: 0,0:19:15.04,0:19:18.46,Subtitle,,0000,0000,0000,,I'm so sorry, I should have known better\Nthan to let Lico out of my sight!
+Dialogue: 0,0:19:18.46,0:19:20.58,Subtitle-2,,0000,0000,0000,,Wow! It's a tapir!
+Dialogue: 0,0:19:18.46,0:19:22.42,Subtitle,,0000,0000,0000,,P-please pick yourself up. There are children watching.
+Dialogue: 0,0:19:22.71,0:19:27.17,Subtitle,,0000,0000,0000,,If you want Lady Momo to take a dose of your medicine,\Nthen you need to be upfront and ask her!
+Dialogue: 0,0:19:27.50,0:19:28.21,Subtitle,,0000,0000,0000,,Medicine?
+Dialogue: 0,0:19:28.71,0:19:30.33,Subtitle,,0000,0000,0000,,Well, it's about your magic power.
+Dialogue: 0,0:19:30.67,0:19:33.63,Subtitle,,0000,0000,0000,,It's been a teeny-bit unstable recently.
+Dialogue: 0,0:19:33.63,0:19:36.67,Subtitle,,0000,0000,0000,,That's why I wanted you\Nto eat some of my medicinal cuisine.
+Dialogue: 0,0:19:36.96,0:19:39.08,Subtitle,,0000,0000,0000,,It's really effective in curing unstable qi!
+Dialogue: 0,0:19:39.38,0:19:41.58,Subtitle,,0000,0000,0000,,These raw leaves are "medicinal cuisine"...?
+Dialogue: 0,0:19:41.83,0:19:45.21,Subtitle,,0000,0000,0000,,I thought you might enjoy chowing down\Non it more if I tricked you into it.
+Dialogue: 0,0:19:45.75,0:19:50.08,Subtitle,,0000,0000,0000,,I understand that you all used some extreme measures\Nwhen Lady Momo gave herself to the darkness.
+Dialogue: 0,0:19:50.25,0:19:53.50,Subtitle,,0000,0000,0000,,Swallowing strange elixirs\Nand forcibly changing her class.
+Dialogue: 0,0:19:53.83,0:19:56.58,Subtitle,,0000,0000,0000,,That's likely what caused her core\Nto become so unstable.
+Dialogue: 0,0:19:56.75,0:20:00.75,Subtitle,,0000,0000,0000,,It's bad for your body and mind\Nif you let your qi stay bent out of shape like that.
+Dialogue: 0,0:20:00.75,0:20:03.79,Subtitle,,0000,0000,0000,,But we knew you'd be too suspicious to trust us.
+Dialogue: 0,0:20:04.08,0:20:07.58,Subtitle,,0000,0000,0000,,Let me get this straight, you put on this whole ruse\Njust to try and get me to take medicine?
+Dialogue: 0,0:20:07.58,0:20:10.17,Subtitle,,0000,0000,0000,,Lico is kind at heart and generally acts in good faith.
+Dialogue: 0,0:20:10.42,0:20:13.21,Subtitle,,0000,0000,0000,,But I also did it partly because watching\Na priestess chew on grass that I tricked her into eating
+Dialogue: 0,0:20:15.29,0:20:16.50,Subtitle,,0000,0000,0000,,You need to shut up, Lico.
+Dialogue: 0,0:20:16.58,0:20:20.58,Subtitle,,0000,0000,0000,,F-forget about that and let's all\Npatch things up over a nice lunch!
+Dialogue: 0,0:20:20.71,0:20:22.46,Subtitle,,0000,0000,0000,,I cooked a ton of stuff.
+Dialogue: 0,0:20:22.75,0:20:23.96,Caption-64,,0000,0000,0000,,{\pos(614.4,259.2)}{\an7}COLD
+Dialogue: 0,0:20:23.96,0:20:34.63,Caption-64,,0000,0000,0000,,{\pos(192,381.6)}{\an7}GLASS / CANS           PLASTICS
+Dialogue: 0,0:20:24.21,0:20:29.17,Subtitle,,0000,0000,0000,,Despite all the trickery, I was being honest\Nwhen I said that I want to get closer with you.
+Dialogue: 0,0:20:29.38,0:20:32.92,Subtitle,,0000,0000,0000,,Well, I don't have a problem taking medicine,\Nso long as you explain the situation to me first.
+Dialogue: 0,0:20:33.17,0:20:34.00,Subtitle,,0000,0000,0000,,Really?
+Dialogue: 0,0:20:34.63,0:20:37.92,Subtitle,,0000,0000,0000,,Boy, I didn't think a baby tiger could be that fluffy!
+Dialogue: 0,0:20:37.92,0:20:41.92,Subtitle,,0000,0000,0000,,Being able to pet something with fur\Nthat silky soft must come only once in a lifetime!
+Dialogue: 0,0:20:41.92,0:20:43.83,Subtitle,,0000,0000,0000,,Yeah, you said it!
+Dialogue: 0,0:20:44.17,0:20:45.46,Subtitle,,0000,0000,0000,,Once in a lifetime...?
+Dialogue: 0,0:20:45.46,0:20:47.83,Subtitle,,0000,0000,0000,,Okay! Here's 800 of 'em to eat before lunch!
+Dialogue: 0,0:20:47.83,0:20:49.71,Subtitle,,0000,0000,0000,,I guess we're just never going to be on the same page.
+Dialogue: 0,0:20:50.08,0:20:52.29,Subtitle,,0000,0000,0000,,But you said you would take the medicine!
+Dialogue: 0,0:20:52.29,0:20:53.58,Subtitle,,0000,0000,0000,,I have my limits!
+Dialogue: 0,0:20:53.58,0:20:55.67,Subtitle,,0000,0000,0000,,The whole reason I came here was to eat LUNCH!
+Dialogue: 0,0:20:55.67,0:20:57.00,Subtitle,,0000,0000,0000,,No fighting!
+Dialogue: 0,0:20:57.00,0:20:58.33,Subtitle,,0000,0000,0000,,Speaking of which, Momo...
+Dialogue: 0,0:20:58.79,0:21:01.21,Subtitle,,0000,0000,0000,,You haven't forgotten about\Nthe other reason you came today, right?
+Dialogue: 0,0:21:01.21,0:21:03.17,Caption-65,,0000,0000,0000,,{\pos(576,180)}{\an7}SHOCK...
+Dialogue: 0,0:21:01.58,0:21:04.92,Subtitle,,0000,0000,0000,,Your special chance to hug a baby tiger\Nthat came with our VIP tickets...
+Dialogue: 0,0:21:09.25,0:21:12.25,Caption-66,,0000,0000,0000,,{\pos(588.8,158.4)}{\an7}THE VIP
+Dialogue: 0,0:21:09.25,0:21:12.25,Caption-67,,0000,0000,0000,,{\pos(512,244.8)}{\an7}PETTING ZOO AREA
+Dialogue: 0,0:21:09.25,0:21:12.25,Caption-68,,0000,0000,0000,,{\pos(473.6,324)}{\an7}CLOSED AT 2 PM TODAY
+Dialogue: 0,0:21:10.83,0:21:12.25,Subtitle,,0000,0000,0000,,I totally forgot...
+Dialogue: 0,0:21:12.25,0:21:15.25,Subtitle,,0000,0000,0000,,Have I mentioned how fluffy I am in my fox form?
+Dialogue: 0,0:21:15.25,0:21:16.42,Subtitle,,0000,0000,0000,,You can hug me if you want.
+Dialogue: 0,0:21:16.25,0:21:17.08,Caption-69,,0000,0000,0000,,{\pos(332.8,144)}{\an7}SNAP
+Dialogue: 0,0:21:16.58,0:21:17.58,Subtitle,,0000,0000,0000,,No thank you!
+Dialogue: 0,0:21:20.38,0:21:23.79,Subtitle,,0000,0000,0000,,Don't think this means you've won...\NDon't think this means you've won...
+Dialogue: 0,0:21:23.96,0:21:26.92,Subtitle,,0000,0000,0000,,Don't think this means you've won....
+Dialogue: 0,0:21:24.83,0:21:27.25,Subtitle-5,,0000,0000,0000,,Momo! I wanna hug her next!
+Dialogue: 0,0:21:27.25,0:21:28.00,Subtitle,,0000,0000,0000,,Fluffy...
+Dialogue: 0,0:21:28.00,0:21:30.83,Subtitle,,0000,0000,0000,,Momo! I also wanna have a turn after that!
+Dialogue: 0,0:21:30.83,0:21:31.79,Subtitle,,0000,0000,0000,,Fluffy...
+Dialogue: 0,0:21:31.79,0:21:36.96,Subtitle,,0000,0000,0000,,Don't give up, Shamiko! Gather around the dining table\Nand let bygones be bygones.
+Dialogue: 0,0:21:39.96,0:21:42.38,Subtitle,,0000,0000,0000,,Lico was so soft to the touch!
+Dialogue: 0,0:21:42.38,0:21:43.92,Subtitle,,0000,0000,0000,,I hope we can hug her again.
+Dialogue: 0,0:21:44.46,0:21:48.71,Subtitle,,0000,0000,0000,,Seems like everybody enjoyed their day out at the zoo.
+Dialogue: 0,0:21:48.92,0:21:49.83,Subtitle,,0000,0000,0000,,Now then...
+Dialogue: 0,0:21:52.08,0:21:55.83,Subtitle,,0000,0000,0000,,I think it's about time for me\Nto start having some fun of my own...
+Dialogue: 0,0:21:59.75,0:22:01.50,Subtitle,,0000,0000,0000,,Bwa? Wuzzat...?
+Dialogue: 0,0:22:01.50,0:22:03.71,Subtitle,,0000,0000,0000,,What have I been doing all this time?
+Dialogue: 0,0:22:03.88,0:22:06.42,Subtitle,,0000,0000,0000,,Was I asleep? Have I been sleeping?
+Dialogue: 0,0:22:06.58,0:22:10.25,Subtitle,,0000,0000,0000,,I think Shamiko said they were going\Nto visit the zoo or something...
+Dialogue: 0,0:22:10.25,0:22:13.25,Subtitle,,0000,0000,0000,,But nobody's tried to talk with me at all today...
+Dialogue: 0,0:22:13.54,0:22:17.25,Subtitle,,0000,0000,0000,,Shamiko? Momo? Mikan?
+Dialogue: 0,0:22:18.63,0:22:21.25,Subtitle,,0000,0000,0000,,I really wanted to have more dialog...
+Dialogue: 0,0:22:21.50,0:22:26.00,Caption-70,,0000,0000,0000,,{\pos(422.4,352.8)}{\an7}TO BE CONTINUED
+Dialogue: 0,0:22:21.63,0:22:25.67,Subtitle,,0000,0000,0000,,Hey guys, it's Anri! I managed to finish\Nall of my summer homework!
+Dialogue: 0,0:22:44.13,0:22:46.71,Song,,0000,0000,0000,,We met again. It's drama?
+Dialogue: 0,0:22:46.71,0:22:49.71,Song,,0000,0000,0000,,I'll go tell someone at once
+Dialogue: 0,0:22:49.88,0:22:52.63,Song,,0000,0000,0000,,As soon as possible
+Dialogue: 0,0:22:52.75,0:22:55.25,Song,,0000,0000,0000,,Oh, even the post box says "Good morning"
+Dialogue: 0,0:22:55.25,0:22:57.46,Song,,0000,0000,0000,,Even my tail is sharp
+Dialogue: 0,0:22:57.46,0:23:01.29,Song,,0000,0000,0000,,If our usual members gather and jump over the white lines
+Dialogue: 0,0:23:01.29,0:23:04.04,Song,,0000,0000,0000,,Today will start, too
+Dialogue: 0,0:23:04.21,0:23:07.83,Song,,0000,0000,0000,,A sudden mystery
+Dialogue: 0,0:23:07.96,0:23:11.21,Song,,0000,0000,0000,,Makes me feel dizzy and at a loss
+Dialogue: 0,0:23:11.46,0:23:15.71,Song,,0000,0000,0000,,But we will hold hands and go anywhere we want
+Dialogue: 0,0:23:19.08,0:23:22.67,Song,,0000,0000,0000,,The city is turning and shining
+Dialogue: 0,0:23:22.79,0:23:25.58,Song,,0000,0000,0000,,Around and around many times
+Dialogue: 0,0:23:25.58,0:23:28.29,Song,,0000,0000,0000,,The night mixed with dreams
+Dialogue: 0,0:23:28.29,0:23:31.17,Song,,0000,0000,0000,,Will make you blossom
+Dialogue: 0,0:23:31.29,0:23:34.17,Song,,0000,0000,0000,,The tetragon that surrounds four sides
+Dialogue: 0,0:23:34.17,0:23:37.04,Song,,0000,0000,0000,,Ah, a bouquet for our neighborhood
+Dialogue: 0,0:23:37.04,0:23:40.00,Song,,0000,0000,0000,,Hey, now, just a little bit more
+Dialogue: 0,0:23:40.25,0:23:44.04,Song,,0000,0000,0000,,Show me the flowers secretly
+Dialogue: 0,0:23:44.25,0:23:47.71,Song,,0000,0000,0000,,Once more if I get greedy!
+Dialogue: 0,0:23:56.08,0:24:11.00,Caption-71,,0000,0000,0000,,{\pos(140.8,100.8)}{\an7}PREVIEW
+Dialogue: 0,0:23:56.83,0:24:00.00,Subtitle,,0000,0000,0000,,Time sure flies when you're having fun with friends, huh?
+Dialogue: 0,0:24:00.54,0:24:01.75,Subtitle,,0000,0000,0000,,I still refuse to accept this.
+Dialogue: 0,0:24:01.75,0:24:03.21,Subtitle,,0000,0000,0000,,What's bothering you, Momo?
+Dialogue: 0,0:24:03.21,0:24:04.79,Subtitle,,0000,0000,0000,,Shamiko! Did you need me? Here I am!
+Dialogue: 0,0:24:04.79,0:24:07.25,Subtitle,,0000,0000,0000,,I know a whole bunch of stuff that could be helpful!
+Dialogue: 0,0:24:06.75,0:24:11.00,Caption-72,,0000,0000,0000,,{\pos(409.6,547.2)}{\an7}PITCH-BLACK FEELINGS!! DARKNESS PEACH RETURNS!!
+Dialogue: 0,0:24:07.25,0:24:08.67,Subtitle,,0000,0000,0000,,In fact, here's something interesting about Chiyoda...
+Dialogue: 0,0:24:08.67,0:24:10.83,Subtitle,,0000,0000,0000,,Ogura! This isn't the place to advance the plot!
